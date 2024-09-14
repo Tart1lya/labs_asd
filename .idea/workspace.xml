@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="all is done">
+    <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="fix input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib/fib.py" beforeDir="false" afterPath="$PROJECT_DIR$/fib/fib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib/inputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib/inputfib.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib/outputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib/outputfib.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib2/fib2.py" beforeDir="false" afterPath="$PROJECT_DIR$/fib2/fib2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib2/inputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib2/inputfib2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speedtest/fib2test.py" beforeDir="false" afterPath="$PROJECT_DIR$/speedtest/fib2test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Tart1lya"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tart1lya&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Tart1lya/lab0.git",
-    "accountId": "c2691830-89a5-425c-8c8d-453fbdc3378f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Tart1lya/lab0.git&quot;,
+    &quot;accountId&quot;: &quot;c2691830-89a5-425c-8c8d-453fbdc3378f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -45,21 +57,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.1.executor": "Run",
-    "Python.2.executor": "Run",
-    "Python.3.executor": "Run",
-    "Python.4.executor": "Run",
-    "Python.fib.executor": "Run",
-    "Python.fib2.executor": "Run",
-    "Python.fib2test.executor": "Run",
-    "Python.fibtest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/goodkid/PycharmProjects/lab0_aisd/speedtest"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fib.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fib2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fib2test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fibtest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/goodkid/PycharmProjects/lab0_aisd/speedtest&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/speedtest" />
@@ -68,6 +80,104 @@
       <recent name="$PROJECT_DIR$/1" />
       <recent name="$PROJECT_DIR$/2" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.fib2">
+    <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab0_aisd" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1/3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab0_aisd" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1/4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab0_aisd" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fib/fib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fib2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab0_aisd" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fib2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fib2/fib2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.fib2" />
+        <item itemvalue="Python.fib" />
+        <item itemvalue="Python.4" />
+        <item itemvalue="Python.3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -93,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725967270421</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix input">
+      <option name="closed" value="true" />
+      <created>1726329172208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726329172208</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +227,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="all is done" />
+    <MESSAGE value="fix input" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix input" />
   </component>
 </project>
