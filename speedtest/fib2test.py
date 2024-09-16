@@ -10,6 +10,8 @@ if 0 <= n <= 10**7:
     for i in range(2, n + 1):
         a, b = b % 10, (a + b) % 10
     f1.write(str(b))
+else:
+    print('Не подходит по диапазону, попробуйте ещё раз')
 print("Время работы: %s секунд" % (time.perf_counter() - t_start))
 print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
 tracemalloc.stop()
