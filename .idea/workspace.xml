@@ -5,21 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="fix fib alg">
+      <change afterPath="$PROJECT_DIR$/lab0/fib/inputfib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab0/fib/outputfib.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/1/4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fib/fib.py" beforeDir="false" afterPath="$PROJECT_DIR$/fib/fib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fib/inputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib/inputfib.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fib/outputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib/outputfib.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fib2/fib2.py" beforeDir="false" afterPath="$PROJECT_DIR$/fib2/fib2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fib2/inputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib2/inputfib2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fib2/outputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib2/outputfib2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speedtest/fib2test.py" beforeDir="false" afterPath="$PROJECT_DIR$/speedtest/fib2test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speedtest/fibtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/speedtest/fibtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib/fib.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib/fib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib/inputfib.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib/outputfib.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib2/fib2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib2/fib2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib2/inputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib2/inputfib2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fib2/outputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib2/outputfib2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speedtest/fib2test.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/speedtest/fib2test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speedtest/fibtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/speedtest/fibtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speedtest/inputfibtest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/speedtest/inputfibtest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speedtest/outputfibtest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/speedtest/outputfibtest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +239,7 @@
       <workItem from="1726409476434" duration="43000" />
       <workItem from="1726409523819" duration="72000" />
       <workItem from="1726409601619" duration="105000" />
-      <workItem from="1726495286921" duration="2697000" />
+      <workItem from="1726495286921" duration="5767000" />
     </task>
     <task id="LOCAL-00001" summary="all is done">
       <option name="closed" value="true" />
@@ -269,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726341500169</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix fib alg">
+      <option name="closed" value="true" />
+      <created>1726498030686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726498030686</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,8 +308,8 @@
     <SUITE FILE_PATH="coverage/lab0_aisd$4.coverage" NAME="4 Coverage Results" MODIFIED="1726496746985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib2test.coverage" NAME="fib2test Coverage Results" MODIFIED="1726496480037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speedtest" />
     <SUITE FILE_PATH="coverage/lab0_aisd$2.coverage" NAME="2 Coverage Results" MODIFIED="1726496542398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
-    <SUITE FILE_PATH="coverage/lab0_aisd$fib.coverage" NAME="fib Coverage Results" MODIFIED="1726496900353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib" />
-    <SUITE FILE_PATH="coverage/lab0_aisd$fib2.coverage" NAME="fib2 Coverage Results" MODIFIED="1726496909569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib2" />
+    <SUITE FILE_PATH="coverage/lab0_aisd$fib.coverage" NAME="fib Coverage Results" MODIFIED="1726500989134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib" />
+    <SUITE FILE_PATH="coverage/lab0_aisd$fib2.coverage" NAME="fib2 Coverage Results" MODIFIED="1726501011014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib2" />
     <SUITE FILE_PATH="coverage/lab0_aisd$3.coverage" NAME="3 Coverage Results" MODIFIED="1726496712101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
     <SUITE FILE_PATH="coverage/lab0_aisd$1.coverage" NAME="1 Coverage Results" MODIFIED="1726496529032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
   </component>
