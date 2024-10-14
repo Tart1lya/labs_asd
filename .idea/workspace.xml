@@ -4,26 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="fix fib alg">
-      <change afterPath="$PROJECT_DIR$/lab1/task1/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task1/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task1/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task2/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task2/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task2/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task3/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task3/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task3/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task5/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task5/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task5/task5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task6/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task6/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task6/task6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task8/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task8/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1/task8/task8.py" afterDir="false" />
+    <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="lab1 is done">
+      <change afterPath="$PROJECT_DIR$/lab1/task1/txtf/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1/task1/txtf/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1/task3/txtf/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1/task3/txtf/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1/task5/txtf/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1/task5/txtf/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1/task6/txtf/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1/task6/txtf/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task2/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task1/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task1/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task1/src/task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task2/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task2/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task2/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task2/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task2/src/task2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task3/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task3/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task3/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task3/src/task3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task5/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task5/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task5/task5.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task5/src/task5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task6/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task6/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task6/task6.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task6/src/task6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task8/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task8/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task8/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task8/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task8/task8.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/task8/src/task8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,12 +104,14 @@
       <recent name="$PROJECT_DIR$/speedtest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lab1/task2" />
-      <recent name="$PROJECT_DIR$/1" />
-      <recent name="$PROJECT_DIR$/2" />
+      <recent name="$PROJECT_DIR$/lab1/task8/txtf" />
+      <recent name="$PROJECT_DIR$/lab1/task8/src" />
+      <recent name="$PROJECT_DIR$/lab1/task6/txtf" />
+      <recent name="$PROJECT_DIR$/lab1/task6/src" />
+      <recent name="$PROJECT_DIR$/lab1/task5/txtf" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2">
+  <component name="RunManager">
     <configuration name="2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
@@ -219,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2" />
         <item itemvalue="Python.fib2" />
         <item itemvalue="Python.fib" />
         <item itemvalue="Python.4" />
         <item itemvalue="Python.3" />
-        <item itemvalue="Python.2" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +261,8 @@
       <workItem from="1728468153145" duration="10911000" />
       <workItem from="1728498415591" duration="3584000" />
       <workItem from="1728654947534" duration="1644000" />
+      <workItem from="1728737092093" duration="9386000" />
+      <workItem from="1728916698835" duration="2691000" />
     </task>
     <task id="LOCAL-00001" summary="all is done">
       <option name="closed" value="true" />
@@ -292,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726498030686</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lab1 is done">
+      <option name="closed" value="true" />
+      <created>1728737330575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728737330575</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,21 +333,22 @@
     <MESSAGE value="all is done" />
     <MESSAGE value="fix input" />
     <MESSAGE value="fix fib alg" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix fib alg" />
+    <MESSAGE value="lab1 is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab1 is done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab0_aisd$4.coverage" NAME="4 Coverage Results" MODIFIED="1726496746985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
-    <SUITE FILE_PATH="coverage/labs_asd$task3.coverage" NAME="task3 Coverage Results" MODIFIED="1728656202546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task3" />
+    <SUITE FILE_PATH="coverage/labs_asd$task3.coverage" NAME="task3 Coverage Results" MODIFIED="1728743110252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task3" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib.coverage" NAME="fib Coverage Results" MODIFIED="1726500989134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib" />
-    <SUITE FILE_PATH="coverage/labs_asd$task5.coverage" NAME="task5 Coverage Results" MODIFIED="1728656570359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task5" />
+    <SUITE FILE_PATH="coverage/labs_asd$task5.coverage" NAME="task5 Coverage Results" MODIFIED="1728916861253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task5" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib2.coverage" NAME="fib2 Coverage Results" MODIFIED="1726501011014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib2" />
-    <SUITE FILE_PATH="coverage/labs_asd$task8.coverage" NAME="task8 Coverage Results" MODIFIED="1728501986927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task8" />
+    <SUITE FILE_PATH="coverage/labs_asd$task8.coverage" NAME="task8 Coverage Results" MODIFIED="1728742137592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task8" />
     <SUITE FILE_PATH="coverage/lab0_aisd$1.coverage" NAME="1 Coverage Results" MODIFIED="1726496529032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
-    <SUITE FILE_PATH="coverage/labs_asd$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1728656132583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task1" />
+    <SUITE FILE_PATH="coverage/labs_asd$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1728919296549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task1/src" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib2test.coverage" NAME="fib2test Coverage Results" MODIFIED="1726496480037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speedtest" />
     <SUITE FILE_PATH="coverage/lab0_aisd$2.coverage" NAME="2 Coverage Results" MODIFIED="1726496542398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
-    <SUITE FILE_PATH="coverage/labs_asd$task2.coverage" NAME="task2 Coverage Results" MODIFIED="1728480751212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task2" />
+    <SUITE FILE_PATH="coverage/labs_asd$task2.coverage" NAME="task2 Coverage Results" MODIFIED="1728740769636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task2" />
     <SUITE FILE_PATH="coverage/lab0_aisd$3.coverage" NAME="3 Coverage Results" MODIFIED="1726496712101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
-    <SUITE FILE_PATH="coverage/labs_asd$task6.coverage" NAME="task6 Coverage Results" MODIFIED="1728655701981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task6" />
+    <SUITE FILE_PATH="coverage/labs_asd$task6.coverage" NAME="task6 Coverage Results" MODIFIED="1728916889236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task6" />
   </component>
 </project>

@@ -2,11 +2,11 @@ import tracemalloc
 import time
 t_start = time.perf_counter()
 tracemalloc.start()
-f_input = open('input.txt', 'r')
+f_input = open('../txtf/input.txt', 'r')
 n = int(f_input.readline())
 m = [int(x) for x in f_input.readline().split()]
 if (3 <= n <= 5000) and (all(abs(i) <= 10**9 for i in m)):
-    f_output = open('output.txt', 'w')
+    f_output = open('../txtf/output.txt', 'w')
     for i in range(len(m)):
         for j in range(i + 1, len(m)):
             if m[j] < m[j - 1]:
