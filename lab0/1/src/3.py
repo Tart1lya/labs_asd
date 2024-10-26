@@ -1,15 +1,12 @@
-import time
 import tracemalloc
+import time
 t_start = time.perf_counter()
 tracemalloc.start()
-f = open('inputfibtest.txt')
-n = int(f.readline())
-f1 = open('outputfibtest.txt', 'w')
-if 0 <= n <= 45:
-    a, b = 0, 1
-    for i in range(2, n + 1):
-        a, b = b, a + b
-    f1.write(str(b))
+f = open('../txtf/input.txt')
+a, b = map(int, f.readline().split())
+f1 = open('../txtf/output.txt', 'w')
+if (-10**9 <= a <= 10**9) and (-10**9 <= b <= 10**9):
+    f1.write(str(a + b))
 else:
     print('Не подходит по диапазону, попробуйте ещё раз')
 print("Время работы: %s секунд" % (time.perf_counter() - t_start))

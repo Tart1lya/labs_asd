@@ -2,9 +2,9 @@ import tracemalloc
 import time
 t_start = time.perf_counter()
 tracemalloc.start()
-f = open('inputfib.txt')
+f = open('../txtf/inputfib.txt')
 n = int(f.readline())
-f1 = open('outputfib.txt', 'w')
+f1 = open('../txtf/outputfib.txt', 'w')
 if 0 <= n <= 45:
     a, b = 0, 1
     for i in range(2, n + 1):
