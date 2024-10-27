@@ -19,15 +19,6 @@ if (1 <= n <= 10 ** 3) and (all(abs(i) <= 10 ** 9 for i in m)):
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
     tracemalloc.stop()
-
-    #The proof that m'[1] <= m'[2] <= ... <= m'[n], where m' is the output of the bubble sort procedure
-    # and n is the length of the array m
-    condition = 0
-    for i in range(len(m) - 1):
-        if m[i] < m[i + 1]:
-            condition += 1
-    if condition == len(m) - 1:
-        print("m'[1] <= m'[2] <= ... <= m'[n]")
 else:
     print('Введите корректные данные')
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))

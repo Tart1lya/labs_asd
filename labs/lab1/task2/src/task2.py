@@ -14,6 +14,7 @@ def insertion_sort_plus(n, m, indices):
         m[j + 1] = key
         indices.append(j + 2)
 
+
 if __name__ == "__main__":
     n_str, m = open_file("../txtf/input.txt")
     n = int(n_str)

@@ -4,7 +4,6 @@ from labs.utils import open_file, write_file
 t_start = time.perf_counter()
 tracemalloc.start()
 
-
 def descending_sort(n, m):
     for i in range(1, n):
         key = m[i]
@@ -23,6 +22,7 @@ if __name__ == "__main__":
         write_file(" ".join(str(a) for a in m), "../txtf/output.txt")
     else:
         print('Введите корректные данные')
+
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
     tracemalloc.stop()
