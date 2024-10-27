@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="fix utils.py, fix code style, fix repository, added unit tests">
-      <change afterPath="$PROJECT_DIR$/labs/lab1/task3/tests/test_task3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs/lab1/task6/tests/test_task6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/lab1/task2/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task2/txtf/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/lab1/task3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task3/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/lab1/task3/src/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task3/src/task3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs/lab1/task3/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task3/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs/lab1/task6/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task6/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs/lab1/task6/src/task6.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task6/src/task6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs/lab1/task6/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task6/txtf/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,8 @@
     "Python tests.Python tests in test_task1.py.executor": "Run",
     "Python tests.Python tests in test_task2.py.executor": "Run",
     "Python tests.Python tests in test_task3.py.executor": "Run",
+    "Python tests.Python tests in test_task5.py.executor": "Run",
+    "Python tests.Python tests in test_task6.py.executor": "Run",
     "Python.1.executor": "Run",
     "Python.2.executor": "Run",
     "Python.3.executor": "Run",
@@ -97,8 +98,8 @@
       <recent name="$PROJECT_DIR$/lab0/fib2/txtf" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_task3.py">
-    <configuration name="task1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_task6.py">
+    <configuration name="task5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,12 +108,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task1/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task5/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab1/task1/src/task1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab1/task5/src/task5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="task2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="task6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,57 +131,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task2/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task6/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab1/task2/src/task2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab1/task6/src/task6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="task3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab0_aisd" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task3/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab1/task3/src/task3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_task2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="lab0_aisd" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task2/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/labs/lab1/task2/tests/test_task2.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests in test_task3.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -199,13 +161,45 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_task5.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="lab0_aisd" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task5/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/labs/lab1/task5/tests/test_task5.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_task6.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="lab0_aisd" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task6/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/labs/lab1/task6/tests/test_task6.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_task6.py" />
+        <item itemvalue="Python.task6" />
+        <item itemvalue="Python tests.Python tests in test_task5.py" />
+        <item itemvalue="Python.task5" />
         <item itemvalue="Python tests.Python tests in test_task3.py" />
-        <item itemvalue="Python.task3" />
-        <item itemvalue="Python.task2" />
-        <item itemvalue="Python tests.Python tests in test_task2.py" />
-        <item itemvalue="Python.task1" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +236,7 @@
       <workItem from="1729371411284" duration="21000" />
       <workItem from="1729411647356" duration="1448000" />
       <workItem from="1729954062577" duration="1801000" />
-      <workItem from="1730024621391" duration="6542000" />
+      <workItem from="1730024621391" duration="8189000" />
     </task>
     <task id="LOCAL-00001" summary="all is done">
       <option name="closed" value="true" />
@@ -324,7 +318,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730030358472</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix utils.py, fix code style, fix repository, added unit tests">
+      <option name="closed" value="true" />
+      <created>1730031185306</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730031185306</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix utils.py, fix code style, fix repository, added unit tests">
+      <option name="closed" value="true" />
+      <created>1730032088023</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730032088023</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,8 +365,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab0_aisd$4.coverage" NAME="4 Coverage Results" MODIFIED="1726496746985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
     <SUITE FILE_PATH="coverage/labs_asd$task3.coverage" NAME="task3 Coverage Results" MODIFIED="1730030986306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task3/src" />
-    <SUITE FILE_PATH="coverage/labs_asd$task5.coverage" NAME="task5 Coverage Results" MODIFIED="1728927908889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task5/src" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib.coverage" NAME="fib Coverage Results" MODIFIED="1726500989134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib" />
+    <SUITE FILE_PATH="coverage/labs_asd$task5.coverage" NAME="task5 Coverage Results" MODIFIED="1730031898109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task5/src" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib2.coverage" NAME="fib2 Coverage Results" MODIFIED="1726501011014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib2" />
     <SUITE FILE_PATH="coverage/labs_asd$task8.coverage" NAME="task8 Coverage Results" MODIFIED="1728927930861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task8/src" />
     <SUITE FILE_PATH="coverage/lab0_aisd$1.coverage" NAME="1 Coverage Results" MODIFIED="1726496529032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
@@ -365,8 +375,8 @@
     <SUITE FILE_PATH="coverage/lab0_aisd$2.coverage" NAME="2 Coverage Results" MODIFIED="1726496542398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
     <SUITE FILE_PATH="coverage/labs_asd$test_task1.coverage" NAME="test_task1 Coverage Results" MODIFIED="1730027062688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task1/tests" />
     <SUITE FILE_PATH="coverage/labs_asd$task2.coverage" NAME="task2 Coverage Results" MODIFIED="1730030716274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task2/src" />
-    <SUITE FILE_PATH="coverage/labs_asd$.coverage" NAME=" Coverage Results" MODIFIED="1730031081770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task3/tests" />
+    <SUITE FILE_PATH="coverage/labs_asd$.coverage" NAME=" Coverage Results" MODIFIED="1730032752119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task6/tests" />
     <SUITE FILE_PATH="coverage/lab0_aisd$3.coverage" NAME="3 Coverage Results" MODIFIED="1726496712101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
-    <SUITE FILE_PATH="coverage/labs_asd$task6.coverage" NAME="task6 Coverage Results" MODIFIED="1728928069313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task6/src" />
+    <SUITE FILE_PATH="coverage/labs_asd$task6.coverage" NAME="task6 Coverage Results" MODIFIED="1730032687718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task6/src" />
   </component>
 </project>
