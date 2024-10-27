@@ -4,47 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="fix repository">
-      <change afterPath="$PROJECT_DIR$/lab0/1/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab0/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab0/fib/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab0/fib2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab0/Артемов Илья Витальевич. Отчет лр 0.docx.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task1/src/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task1/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task1/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task2/src/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task2/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task2/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task3/src/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task3/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task3/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task4/src/task4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task4/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task4/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task5/src/task5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task5/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task5/txtf/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task7/src/task7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task7/txtf/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2/task7/txtf/output.txt" afterDir="false" />
+    <list default="true" id="38ba3922-7749-4432-bece-9940632dd50f" name="Changes" comment="fix repository, added report for every task">
+      <change afterPath="$PROJECT_DIR$/labs/lab1/Отчёт по лр1. Артемов Илья К3141.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs/lab2/task7/txtf/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/1/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/src/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/1/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/src/2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/1/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/src/3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/1/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/src/4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/1/txtf/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/fib/fib.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib/src/fib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/fib/inputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib/txtf/inputfib.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/fib/outputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib/txtf/outputfib.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/fib2/fib2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib2/src/fib2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/fib2/inputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib2/txtf/inputfib2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/fib2/outputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab0/fib2/txtf/outputfib2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/speedtest/fib2test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/speedtest/fibtest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/speedtest/inputfibtest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0/speedtest/outputfibtest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/1/src/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/1/src/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/1/src/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/1/src/2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/1/src/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/1/src/3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/1/src/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/1/src/4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/1/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/1/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/1/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/1/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib/src/fib.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib/src/fib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib/txtf/inputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib/txtf/inputfib.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib/txtf/outputfib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib/txtf/outputfib.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib2/src/fib2.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib2/src/fib2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib2/txtf/inputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib2/txtf/inputfib2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/fib2/txtf/outputfib2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/fib2/txtf/outputfib2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab0/Артемов Илья Витальевич. Отчет лр 0.docx.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab0/Артемов Илья Витальевич. Отчет лр 0.docx.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task1/src/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task1/src/task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task1/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task1/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task1/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task1/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task2/src/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task2/src/task2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task2/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task2/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task2/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task2/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task3/src/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task3/src/task3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task3/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task3/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task3/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task3/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task5/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task5/src/task5.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task5/src/task5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task5/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task5/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task5/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task5/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task6/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task6/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task6/src/task6.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task6/src/task6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task6/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task6/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task6/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task6/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task8/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task8/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task8/src/task8.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task8/src/task8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task8/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task8/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/task8/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task8/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/Отчёт по лр1. Артемов Илья К3141.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task1/src/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab1/task1/tests/test_task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task1/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task1/src/task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task1/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task1/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task2/src/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task2/src/task2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task2/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task1/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task2/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task2/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task3/src/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task3/src/task3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task3/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task2/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task3/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task3/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task4/src/task4.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task4/src/task4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task4/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task3/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task4/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task4/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task5/src/task5.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task5/src/task5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task5/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task4/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task5/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task5/txtf/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task7/src/task7.py" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task7/src/task7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task7/txtf/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task5/txtf/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/task7/txtf/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/labs/lab2/task7/txtf/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,48 +110,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fib.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fib2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fib2test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fibtest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task8.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/goodkid/PycharmProjects/lab0_aisd/speedtest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_task1.TestInsertionSort.executor": "Run",
+    "Python tests.Python tests for test_task1.TestInsertionSort.test_should_insertion_sort.executor": "Run",
+    "Python tests.Python tests for test_task1.TestInsertionSort.test_should_insertion_sort_test.executor": "Run",
+    "Python tests.Python tests in test_task1.py.executor": "Run",
+    "Python.1.executor": "Run",
+    "Python.2.executor": "Run",
+    "Python.3.executor": "Run",
+    "Python.4.executor": "Run",
+    "Python.fib.executor": "Run",
+    "Python.fib2.executor": "Run",
+    "Python.fib2test.executor": "Run",
+    "Python.fibtest.executor": "Run",
+    "Python.task1.executor": "Run",
+    "Python.task2.executor": "Run",
+    "Python.task3.executor": "Run",
+    "Python.task5.executor": "Run",
+    "Python.task6.executor": "Run",
+    "Python.task8.executor": "Run",
+    "Python.test_task1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/goodkid/PycharmProjects/lab0_aisd/speedtest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/speedtest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/labs" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lab1/task1" />
       <recent name="$PROJECT_DIR$/lab0" />
       <recent name="$PROJECT_DIR$/lab0/fib2/txtf" />
-      <recent name="$PROJECT_DIR$/lab0/fib2/src" />
-      <recent name="$PROJECT_DIR$/lab0/fib/txtf" />
-      <recent name="$PROJECT_DIR$/lab0/fib/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2">
-    <configuration name="2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_task1.TestInsertionSort.test_should_insertion_sort_test">
+    <configuration name="task1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,12 +165,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task1/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1/2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labs/lab1/task1/src/task1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,105 +179,77 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_task1.TestInsertionSort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task1/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1/3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_task1.TestInsertionSort&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_task1.TestInsertionSort.test_should_insertion_sort" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task1/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1/4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_task1.TestInsertionSort.test_should_insertion_sort&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="fib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_task1.TestInsertionSort.test_should_insertion_sort_test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task1/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fib/fib.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_task1.TestInsertionSort.test_should_insertion_sort_test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="fib2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_task1.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="lab0_aisd" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fib2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/labs/lab1/task1/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fib2/fib2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/labs/lab1/task1/tests/test_task1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.2" />
-        <item itemvalue="Python.fib2" />
-        <item itemvalue="Python.fib" />
-        <item itemvalue="Python.4" />
-        <item itemvalue="Python.3" />
+        <item itemvalue="Python tests.Python tests for test_task1.TestInsertionSort.test_should_insertion_sort_test" />
+        <item itemvalue="Python tests.Python tests for test_task1.TestInsertionSort.test_should_insertion_sort" />
+        <item itemvalue="Python.task1" />
+        <item itemvalue="Python tests.Python tests for test_task1.TestInsertionSort" />
+        <item itemvalue="Python tests.Python tests in test_task1.py" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +285,8 @@
       <workItem from="1729370758398" duration="92000" />
       <workItem from="1729371411284" duration="21000" />
       <workItem from="1729411647356" duration="1448000" />
-      <workItem from="1729954062577" duration="1628000" />
+      <workItem from="1729954062577" duration="1801000" />
+      <workItem from="1730024621391" duration="3765000" />
     </task>
     <task id="LOCAL-00001" summary="all is done">
       <option name="closed" value="true" />
@@ -340,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728919635598</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix repository, added report for every task">
+      <option name="closed" value="true" />
+      <created>1729955861611</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729955861611</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,20 +375,23 @@
     <MESSAGE value="fix fib alg" />
     <MESSAGE value="lab1 is done" />
     <MESSAGE value="fix repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix repository" />
+    <MESSAGE value="fix repository, added report for every task" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix repository, added report for every task" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab0_aisd$4.coverage" NAME="4 Coverage Results" MODIFIED="1726496746985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
     <SUITE FILE_PATH="coverage/labs_asd$task3.coverage" NAME="task3 Coverage Results" MODIFIED="1728927896467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task3/src" />
-    <SUITE FILE_PATH="coverage/lab0_aisd$fib.coverage" NAME="fib Coverage Results" MODIFIED="1726500989134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib" />
     <SUITE FILE_PATH="coverage/labs_asd$task5.coverage" NAME="task5 Coverage Results" MODIFIED="1728927908889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task5/src" />
+    <SUITE FILE_PATH="coverage/lab0_aisd$fib.coverage" NAME="fib Coverage Results" MODIFIED="1726500989134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib2.coverage" NAME="fib2 Coverage Results" MODIFIED="1726501011014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fib2" />
     <SUITE FILE_PATH="coverage/labs_asd$task8.coverage" NAME="task8 Coverage Results" MODIFIED="1728927930861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task8/src" />
     <SUITE FILE_PATH="coverage/lab0_aisd$1.coverage" NAME="1 Coverage Results" MODIFIED="1726496529032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
-    <SUITE FILE_PATH="coverage/labs_asd$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1728927859059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task1/src" />
+    <SUITE FILE_PATH="coverage/labs_asd$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1730027626347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task1/src" />
     <SUITE FILE_PATH="coverage/lab0_aisd$fib2test.coverage" NAME="fib2test Coverage Results" MODIFIED="1726496480037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speedtest" />
     <SUITE FILE_PATH="coverage/lab0_aisd$2.coverage" NAME="2 Coverage Results" MODIFIED="1726496542398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
     <SUITE FILE_PATH="coverage/labs_asd$task2.coverage" NAME="task2 Coverage Results" MODIFIED="1728927881145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task2/src" />
+    <SUITE FILE_PATH="coverage/labs_asd$test_task1.coverage" NAME="test_task1 Coverage Results" MODIFIED="1730027062688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task1/tests" />
+    <SUITE FILE_PATH="coverage/labs_asd$.coverage" NAME=" Coverage Results" MODIFIED="1730027941448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labs/lab1/task1/tests" />
     <SUITE FILE_PATH="coverage/lab0_aisd$3.coverage" NAME="3 Coverage Results" MODIFIED="1726496712101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1" />
     <SUITE FILE_PATH="coverage/labs_asd$task6.coverage" NAME="task6 Coverage Results" MODIFIED="1728928069313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1/task6/src" />
   </component>

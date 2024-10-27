@@ -18,24 +18,26 @@
 
 ## Структура проекта
 ```
-lab1/
-|-- task1/
-|   |-- src/
-|   |   |-- task1.py       # Реализация алгоритма сортировка вставками
-|   |-- txtf/
-|   |   |-- input.txt      # Входные данные
-|   |   |-- output.txt     # Выходные данные
+labs/
+|-- lab1/
+|     |-- task1/
+|     |     |-- src/
+|     |     |     |-- task1.py      # Реализация алгоритма сортировка вставками
+|     |     |-- tests/
+|     |     |     |-- test_task1.py       # Тесты
+|     |     |-- txtf/
+|     |     |     |-- input.txt     # Входные данные
+|     |     |     |-- output.txt    # Выходные данные
 ```
 ## Код задачи
 ```
 import tracemalloc
 import time
+from labs.utils import open_file, write_file
 t_start = time.perf_counter()
 tracemalloc.start()
-f_input = open('../txtf/input.txt', 'r')
-n = int(f_input.readline())
-m = [int(x) for x in f_input.readline().split()]
-if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
+
+def insertion_sort(n, m):
     for i in range(1, len(m)):
         key = m[i]
         j = i - 1
@@ -43,14 +45,23 @@ if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
             m[j + 1] = m[j]
             j -= 1
         m[j + 1] = key
-    m_sorted = ' '.join(map(str, m))
-    f_output = open('../txtf/output.txt', 'w')
-    f_output.write(m_sorted)
-else:
-    print('Введите корректные данные')
-print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-tracemalloc.stop()
+
+
+if __name__ == "__main__":
+    n_str, m = open_file("../txtf/input.txt")
+    print(m)
+    n = int(n_str)
+    if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
+        insertion_sort(n, m)
+        write_file(" ".join(str(a) for a in m), "../txtf/output.txt")
+    else:
+        print('Введите корректные данные')
+
+    print("Время работы: %s секунд" % (time.perf_counter() - t_start))
+    print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
+    tracemalloc.stop()
+
+
 ```
 ## Запуск проекта
 
