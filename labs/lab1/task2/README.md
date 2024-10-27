@@ -20,26 +20,27 @@
 
 ## Структура проекта
 ```
-lab1/
-|-- task2/
-|   |-- src/
-|   |   |-- task2.py       # Реализация алгоритма сортировка вставками
-|   |-- txtf/
-|   |   |-- input.txt      # Входные данные
-|   |   |-- output.txt     # Выходные данные
+labs/
+|-- lab1/
+|     |-- task2/
+|     |     |-- src/
+|     |     |     |-- task2.py      # Реализация алгоритма сортировка вставками
+|     |     |-- tests/
+|     |     |     |-- test_task2.py       # Тесты
+|     |     |-- txtf/
+|     |     |     |-- input.txt     # Входные данные
+|     |     |     |-- output.txt    # Выходные данные
 ```
 ## Код задачи
 ```
 import tracemalloc
 import time
+from labs.utils import open_file, write_file
 t_start = time.perf_counter()
 tracemalloc.start()
-f_input = open('../txtf/input.txt', 'r')
-n = int(f_input.readline())
-m = [int(x) for x in f_input.readline().split()]
-indices = [1]
-if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
-    for i in range(1, len(m)):
+
+def insertion_sort_plus(n, m, indices):
+    for i in range(1, n):
         key = m[i]
         j = i - 1
         while j >= 0 and m[j] > key:
@@ -47,13 +48,16 @@ if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
             j -= 1
         m[j + 1] = key
         indices.append(j + 2)
-    indices = ' '.join(map(str, indices))
-    m_sorted = ' '.join(map(str, m))
-    f_output = open('../txtf/output.txt', 'w')
-    f_output.write(f'{indices}\n')
-    f_output.write(m_sorted)
-else:
-    print('Введите корректные данные')
+
+if __name__ == "__main__":
+    n_str, m = open_file("../txtf/input.txt")
+    n = int(n_str)
+    indices = [1]
+    if (1 <= n <= 10 ** 3) and (all(abs(i) <= 10 ** 9 for i in m)):
+        insertion_sort_plus(n, m, indices)
+        write_file(" ".join(map(str, indices)), "../txtf/output.txt", mode='a')
+        write_file(" ".join(str(a) for a in m), "../txtf/output.txt", mode='a')
+
 print("Время работы: %s секунд" % (time.perf_counter() - t_start))
 print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
 tracemalloc.stop()

@@ -5,7 +5,7 @@ t_start = time.perf_counter()
 tracemalloc.start()
 
 def insertion_sort(n, m):
-    for i in range(1, len(m)):
+    for i in range(1, n):
         key = m[i]
         j = i - 1
         while j >= 0 and m[j] > key:
@@ -16,7 +16,6 @@ def insertion_sort(n, m):
 
 if __name__ == "__main__":
     n_str, m = open_file("../txtf/input.txt")
-    print(m)
     n = int(n_str)
     if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
         insertion_sort(n, m)

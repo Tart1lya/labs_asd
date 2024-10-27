@@ -1,3 +1,11 @@
+def delete_prev_values():
+    with open("../txtf/output.txt", 'w') as file:
+        pass
+delete_prev_values()
+
+
+with open("../txtf/output.txt", 'w') as file:
+    pass
 def open_file(file_name):
     with open(file_name, 'r') as file:
         lines = file.readlines()
@@ -28,16 +36,13 @@ def open_file(file_name):
 
 
 
-def write_file(arr, file_name):
-    with open(file_name, 'w') as file:
-        if arr==str(arr):
-            file.write(arr)
-        else:
-            if isinstance(arr, list):
-                if isinstance(arr[0], list):
-                    for r in arr:
-                        file.write(' '.join(map(str, r)) + '\n')
-                else:
-                    file.write(" ".join(map(str, arr)))
+def write_file(arr, file_name, mode = 'w'):
+    with open(file_name, mode) as file:
+        if isinstance(arr, str):
+            file.write(arr + "\n")
+        elif isinstance(arr, list):
+            if isinstance(arr[0], list):
+                for r in arr:
+                    file.write(" ".join(map(str, r)) + "\n")
             else:
-                file.write(arr)
+                file.write(" ".join(map(str, arr)) + "\n")
