@@ -1,5 +1,5 @@
 import unittest
-from labs.lab1.task2.src.task2 import insertion_sort_plus
+from lab1.task2.src.task2 import insertion_sort_plus
 
 class TestInsertionSortPlus(unittest.TestCase):
 

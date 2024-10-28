@@ -1,6 +1,6 @@
 import unittest
 
-from labs.lab1.task1.src.task1 import insertion_sort
+from lab1.task1.src.task1 import insertion_sort
 
 
 

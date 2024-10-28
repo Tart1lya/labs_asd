@@ -1,5 +1,5 @@
 import unittest
-from labs.lab1.task5.src.task5 import selection_sort
+from lab1.task5.src.task5 import selection_sort
 
 class TestSelectionSort(unittest.TestCase):
 

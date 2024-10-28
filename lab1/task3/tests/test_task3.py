@@ -1,5 +1,5 @@
 import unittest
-from labs.lab1.task3.src.task3 import descending_sort
+from lab1.task3.src.task3 import descending_sort
 
 class TestDescendingSort(unittest.TestCase):
 

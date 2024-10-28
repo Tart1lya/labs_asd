@@ -1,6 +1,6 @@
 import tracemalloc
 import time
-from labs.utils import open_file, write_file
+from lab1.utils import open_file, write_file
 t_start = time.perf_counter()
 tracemalloc.start()
 

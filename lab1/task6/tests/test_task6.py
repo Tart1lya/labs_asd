@@ -1,5 +1,5 @@
 import unittest
-from labs.lab1.task6.src.task6 import bubble_sort
+from lab1.task6.src.task6 import bubble_sort
 
 class TestBubbleSort(unittest.TestCase):
 
