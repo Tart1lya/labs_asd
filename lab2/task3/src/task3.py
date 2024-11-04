@@ -56,7 +56,7 @@ def merge_sort_and_count(arr, temp_arr, left, right):
 
 if __name__ == "__main__":
     n_str, m = open_file("../txtf/input.txt")
-    n = int(n_str)
+    n = int(n_str[0])
     if (1 <= n <= 10**5) and (all(abs(i) <= 10**9 for i in m)):
         temp_arr = [0] * n
         result = merge_sort_and_count(m, temp_arr, 0, n - 1)

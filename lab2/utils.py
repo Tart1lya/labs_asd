@@ -8,38 +8,20 @@ with open("../txtf/output.txt", 'w') as file:
     pass
 def open_file(file_name):
     with open(file_name, 'r') as file:
-        lines = file.readlines()
+        lines = [line.strip() for line in file if line.strip()]
         if len(lines) == 2:
-            n=lines[0]
-            if lines[1][0] in "ABCDEFGHIJKLMNOPQRSTUYXWZ":
-                arr = [i for i in lines[1]]
-            else:
-                arr = list(map(int, lines[1].split()))
-            return n,arr
-        if len(lines) == 4:
-            n1 = lines[0]
-            n2 = lines[2]
-            arr1 = list(map(int, lines[1].split()))
-            arr2 = list(map(int, lines[3].split()))
-            return n1, arr1, n2, arr2
-        else:
-            n = int(lines[0].strip())
-            arr1 = []
-            for i in range(1, n + 1):
-                row = list(map(int, lines[i].strip().split()))
-                arr1.append(row)
-            arr2 = []
-            for i in range(n + 1, 2 * n + 1):
-                row = list(map(int, lines[i].strip().split()))
-                arr2.append(row)
-        return arr1, arr2
+            data_n = list(map(int, lines[0].split()))
+            n, arr_n = data_n[0], data_n[1:]
+            data_k = list(map(int, lines[1].split()))
+            k, arr_k = data_k[0], data_k[1:]
+            return [n] + arr_n, [k] + arr_k  # Возвращаем n, a и k, b
 
 
 
 def write_file(arr, file_name, mode = 'w'):
     with open(file_name, mode) as file:
         if isinstance(arr, (str, int)):
-            file.write(str(arr) + "\n")
+            file.write(str(arr))
         elif isinstance(arr, list):
             if isinstance(arr[0], list):
                 for r in arr:

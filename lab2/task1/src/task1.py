@@ -44,7 +44,7 @@ def merge_sort(arr, left, right):
 
 if __name__ == "__main__":
     n_str, m = open_file("../txtf/input.txt")
-    n = int(n_str)
+    n = int(n_str[0])
     if (1 <= n <= 2 * 10**4) and (all(abs(i) <= 10**9 for i in m)):
         merge_sort(m, 0, n - 1)
         write_file(" ".join(str(a) for a in m), "../txtf/output.txt")
