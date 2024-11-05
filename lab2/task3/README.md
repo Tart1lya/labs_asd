@@ -1,16 +1,15 @@
-# Задача 3: Сортировка вставками по убыванию
+# Задача 3: Число инверсий
 
 ## Описание
 
-В данной задаче реализуется алгоритм сортировки вставками, который сортирует массив по убыванию. Алгоритм проходит по элементам массива и вставляет каждый элемент в его правильную позицию среди уже отсортированных элементов, чтобы обеспечить порядок по убыванию.
-
+Код подсчитывает число инверсий в массиве, используя модификацию сортировки слиянием.
 ### Формат входных данных
 - Входные данные находятся в файле input.txt.
-- Первая строка содержит одно число n (1 ≤ n ≤ 1000) — количество элементов в массиве.
+- Первая строка содержит одно число n (1 ≤ n ≤ 10^5) — количество элементов в массиве.
 - Вторая строка содержит n целых чисел, по модулю не превосходящих 10^9.
 
 ### Формат выходных данных
-- В выходном файле output.txt должен содержаться отсортированный по убыванию массив. Все числа должны быть разделены ровно одним пробелом.
+- В выходном файле output.txt должно быть количество инверсий.
 
 ### Ограничения
 - Время выполнения: 2 секунды.
@@ -18,7 +17,7 @@
 
 ## Структура проекта
 ```
-lab1/
+lab2/
 |--   task3/
 |     |-- src/
 |     |     |-- task3.py      # Реализация алгоритма
@@ -32,32 +31,79 @@ lab1/
 ```
 import tracemalloc
 import time
-from labs.utils import open_file, write_file
+from lab2.utils import open_file, write_file
 t_start = time.perf_counter()
 tracemalloc.start()
 
+def merge_and_count(arr, temp_arr, left, mid, right):
+    i = left
+    j = mid + 1
+    k = left
+    inv_count = 0
 
-def descending_sort(n, m):
-    for i in range(1, n):
-        key = m[i]
-        j = i - 1
-        while j >= 0 and m[j] < key:
-            m[j + 1] = m[j]
-            j -= 1
-        m[j + 1] = key
+
+    while i <= mid and j <= right:
+        if arr[i] <= arr[j]:
+            temp_arr[k] = arr[i]
+            i += 1
+        else:
+
+            temp_arr[k] = arr[j]
+            inv_count += (mid - i + 1)
+            j += 1
+        k += 1
+
+
+    while i <= mid:
+        temp_arr[k] = arr[i]
+        i += 1
+        k += 1
+
+
+    while j <= right:
+        temp_arr[k] = arr[j]
+        j += 1
+        k += 1
+
+
+    for i in range(left, right + 1):
+        arr[i] = temp_arr[i]
+
+    return inv_count
+
+
+def merge_sort_and_count(arr, temp_arr, left, right):
+    inv_count = 0
+    if left < right:
+        mid = (left + right) // 2
+
+        inv_count += merge_sort_and_count(arr, temp_arr, left, mid)
+        inv_count += merge_sort_and_count(arr, temp_arr, mid + 1, right)
+
+        inv_count += merge_and_count(arr, temp_arr, left, mid, right)
+
+    return inv_count
 
 
 if __name__ == "__main__":
     n_str, m = open_file("../txtf/input.txt")
-    n = int(n_str)
-    if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
-        descending_sort(n, m)
-        write_file(" ".join(str(a) for a in m), "../txtf/output.txt")
+    n = int(n_str[0])
+    if (1 <= n <= 10**5) and (all(abs(i) <= 10**9 for i in m)):
+        temp_arr = [0] * n
+        result = merge_sort_and_count(m, temp_arr, 0, n - 1)
+        write_file(result, "../txtf/output.txt")
     else:
         print('Введите корректные данные')
+
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
     tracemalloc.stop()
+
+
+
+
+
+
 ```
 ## Запуск проекта
 
@@ -74,8 +120,8 @@ if __name__ == "__main__":
 ## Пример
 
 ### Входные данные (input.txt)
-6
-31 41 59 26 41 58
+10
+1 8 2 1 4 7 3 2 3 6
 
 ### Выходные данные (output.txt)
-59 58 41 41 31 26
+17

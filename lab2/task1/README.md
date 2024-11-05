@@ -1,12 +1,11 @@
-# Задача 1: Сортировка вставками
+# Задача 1: Сортировка слиянием
 
 ## Описание
 
-В данной задаче реализуется алгоритм сортировки вставками. Алгоритм работает путём последовательного прохода по элементам массива и вставки каждого элемента в его правильную позицию среди уже отсортированных элементов. Такой подход позволяет сортировать массив с минимальным использованием дополнительной памяти.
-
+Код реализует алгоритм сортировки слиянием и включает в себя функциональность для чтения входных данных из файла и записи отсортированных данных в выходной файл, а также отслеживание времени выполнения и использования памяти.
 ### Формат входных данных
 - Входные данные находятся в файле input.txt.
-- Первая строка содержит одно число n (1 ≤ n ≤ 1000) — количество элементов в массиве.
+- Первая строка содержит одно число n (1 ≤ n ≤ 2 * 10^4) — количество элементов в массиве.
 - Вторая строка содержит n целых чисел, по модулю не превосходящих 10^9.
 
 ### Формат выходных данных
@@ -18,7 +17,7 @@
 
 ## Структура проекта
 ```
-lab1/
+lab2/
 |--   task1/
 |     |-- src/
 |     |     |-- task1.py      # Реализация алгоритма
@@ -32,26 +31,49 @@ lab1/
 ```
 import tracemalloc
 import time
-from labs.utils import open_file, write_file
+from lab2.utils import open_file, write_file
 t_start = time.perf_counter()
 tracemalloc.start()
 
-def insertion_sort(n, m):
-    for i in range(1, len(m)):
-        key = m[i]
-        j = i - 1
-        while j >= 0 and m[j] > key:
-            m[j + 1] = m[j]
-            j -= 1
-        m[j + 1] = key
+def merge(arr, left, mid, right):
 
+    L = arr[left:mid + 1]
+    R = arr[mid + 1:right + 1]
+
+    i = j = 0
+    k = left
+
+    while i < len(L) and j < len(R):
+        if L[i] <= R[j]:
+            arr[k] = L[i]
+            i += 1
+        else:
+            arr[k] = R[j]
+            j += 1
+        k += 1
+
+    while i < len(L):
+        arr[k] = L[i]
+        i += 1
+        k += 1
+
+    while j < len(R):
+        arr[k] = R[j]
+        j += 1
+        k += 1
+
+def merge_sort(arr, left, right):
+    if left < right:
+        mid = (left + right) // 2
+        merge_sort(arr, left, mid)
+        merge_sort(arr, mid + 1, right)
+        merge(arr, left, mid, right)
 
 if __name__ == "__main__":
     n_str, m = open_file("../txtf/input.txt")
-    print(m)
-    n = int(n_str)
-    if (1 <= n <= 10**3) and (all(abs(i) <= 10**9 for i in m)):
-        insertion_sort(n, m)
+    n = int(n_str[0])
+    if (1 <= n <= 2 * 10**4) and (all(abs(i) <= 10**9 for i in m)):
+        merge_sort(m, 0, n - 1)
         write_file(" ".join(str(a) for a in m), "../txtf/output.txt")
     else:
         print('Введите корректные данные')
@@ -59,6 +81,8 @@ if __name__ == "__main__":
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
     tracemalloc.stop()
+
+
 
 
 ```
@@ -77,8 +101,8 @@ if __name__ == "__main__":
 ## Пример
 
 ### Входные данные (input.txt)
-6
-31 41 59 26 41 58
+5
+1 9 3 2 2
 
 ### Выходные данные (output.txt)
-26 31 41 41 58 59
+1 2 2 3 9

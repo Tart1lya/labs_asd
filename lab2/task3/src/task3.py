@@ -5,36 +5,36 @@ t_start = time.perf_counter()
 tracemalloc.start()
 
 def merge_and_count(arr, temp_arr, left, mid, right):
-    i = left  # Начальный индекс левой половины
-    j = mid + 1  # Начальный индекс правой половины
-    k = left  # Индекс для временного массива
+    i = left
+    j = mid + 1
+    k = left
     inv_count = 0
 
-    # Пока есть элементы в левой и правой половинах
+
     while i <= mid and j <= right:
         if arr[i] <= arr[j]:
             temp_arr[k] = arr[i]
             i += 1
         else:
-            # Есть инверсия, так как arr[i] > arr[j] и i < j
+
             temp_arr[k] = arr[j]
             inv_count += (mid - i + 1)
             j += 1
         k += 1
 
-    # Копируем оставшиеся элементы левой половины (если есть)
+
     while i <= mid:
         temp_arr[k] = arr[i]
         i += 1
         k += 1
 
-    # Копируем оставшиеся элементы правой половины (если есть)
+
     while j <= right:
         temp_arr[k] = arr[j]
         j += 1
         k += 1
 
-    # Копируем отсортированные элементы из temp_arr обратно в arr
+
     for i in range(left, right + 1):
         arr[i] = temp_arr[i]
 

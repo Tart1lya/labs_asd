@@ -5,15 +5,13 @@ t_start = time.perf_counter()
 tracemalloc.start()
 
 def merge(arr, left, mid, right):
-    # Создаем копии двух половин
+
     L = arr[left:mid + 1]
     R = arr[mid + 1:right + 1]
 
-    # Указатели для L, R и основного массива
     i = j = 0
     k = left
 
-    # Объединяем две половины
     while i < len(L) and j < len(R):
         if L[i] <= R[j]:
             arr[k] = L[i]
@@ -23,13 +21,11 @@ def merge(arr, left, mid, right):
             j += 1
         k += 1
 
-    # Копируем оставшиеся элементы L, если есть
     while i < len(L):
         arr[k] = L[i]
         i += 1
         k += 1
 
-    # Копируем оставшиеся элементы R, если есть
     while j < len(R):
         arr[k] = R[j]
         j += 1

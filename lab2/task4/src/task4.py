@@ -20,7 +20,7 @@ if __name__ == "__main__":
     data_n, data_k = open_file("../txtf/input.txt")
 
     n = int(data_n[0])
-    a = data_n[1:]  # Здесь уже предполагаем, что данные очищены в open_file()
+    a = data_n[1:]
     k = int(data_k[0])
     b = data_k[1:]
 
