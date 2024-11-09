@@ -9,13 +9,23 @@ with open("../txtf/output.txt", 'w') as file:
 def open_file(file_name):
     with (open(file_name, 'r') as file):
         lines = [line.strip() for line in file if line.strip()]
-        if len(lines) >= 2:
+        if len(lines) == 2:
             data_n = list(map(int, lines[0].split()))
             n, arr_n = data_n[0], data_n[1:]
             data_k = list(map(int, lines[1].split()))
             k = data_k[0]
-            arr_k = data_k[1:] if len(data_k) > 1 else []
-            return [n] + arr_n, [k] + arr_k  # Возвращаем n, a и k, b
+            return [n, k], arr_n
+
+        elif len(lines) == 1:
+            arr = list(map(int, lines[0].split()))
+            return arr, []
+
+        elif len(lines) > 1:
+            data_n = list(map(int, lines[0].split()))
+            n = data_n[0]
+            arr = list(map(int, lines[1].split()))
+            return [n], arr
+    return [], []
 
 
 
