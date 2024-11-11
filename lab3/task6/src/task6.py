@@ -32,7 +32,6 @@ if __name__ == "__main__":
         C.sort()
         # Подсчёт суммы каждого десятого элемента
         result = sum(C[i] for i in range(0, len(C), 10))
-        # Записываем отсортированный массив в файл output.txt
         write_file(result, "../txtf/output.txt")
     else:
         # Выводим сообщение об ошибке, если данные некорректны
