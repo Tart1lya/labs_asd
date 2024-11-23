@@ -2,32 +2,66 @@ import unittest
 from lab3.task3.src.task3 import can_sort
 
 
-
 class TestCanSort(unittest.TestCase):
 
     def test_should_print_can_sort_possible(self):
-        # Проверяем случай, когда сортировка возможна
-        result = can_sort(6, 2, [3, 1, 2, 4, 6, 5])
+        # given
+        n = 6
+        m = 2
+        arr = [3, 1, 2, 4, 6, 5]
+
+        # when
+        result = can_sort(n, m, arr)
+
+        # then
         self.assertEqual(result, "НЕТ")
 
     def test_should_print_can_sort_impossible(self):
-        # Проверяем случай, когда сортировка невозможна
-        result = can_sort(6, 3, [3, 1, 2, 4, 6, 5])
+        # given
+        n = 6
+        m = 3
+        arr = [3, 1, 2, 4, 6, 5]
+
+        # when
+        result = can_sort(n, m, arr)
+
+        # then
         self.assertEqual(result, "НЕТ")
 
     def test_should_print_with_single_element(self):
-        # Проверяем случай с одним элементом
-        result = can_sort(1, 1, [10])
+        # given
+        n = 1
+        m = 1
+        arr = [10]
+
+        # when
+        result = can_sort(n, m, arr)
+
+        # then
         self.assertEqual(result, "ДА")
 
     def test_should_print_with_identical_elements(self):
-        # Проверяем случай, когда все элементы одинаковы
-        result = can_sort(5, 2, [7, 7, 7, 7, 7])
+        # given
+        n = 5
+        m = 2
+        arr = [7, 7, 7, 7, 7]
+
+        # when
+        result = can_sort(n, m, arr)
+
+        # then
         self.assertEqual(result, "ДА")
 
     def test_should_print_with_large_input(self):
-        # Проверка на больших данных
-        result = can_sort(10 ** 5, 2, list(range(10 ** 5, 0, -1)))
+        # given
+        n = 10 ** 5
+        m = 2
+        arr = list(range(10 ** 5, 0, -1))
+
+        # when
+        result = can_sort(n, m, arr)
+
+        # then
         self.assertEqual(result, "НЕТ")
 
 
