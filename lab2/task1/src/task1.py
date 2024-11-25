@@ -1,7 +1,8 @@
 # Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
-from lab2.utils import open_file, write_file
+from lab2.utils import write_file, open_file, get_output_path, delete_prev_values
+import os
 
 # Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
@@ -57,16 +58,21 @@ def merge_sort(arr, left, right):
 
 # Основной блок программы
 if __name__ == "__main__":
+    current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+    txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
+    input_path = os.path.join(txtf_dir, "input.txt")
     # Читаем данные из файла input.txt с помощью функции open_file
-    n_str, m = open_file("../txtf/input.txt")
+    n_str, m = open_file(input_path)
     n = int(n_str[0])  # Преобразуем первую строку в число n
 
     # Проверка корректности входных данных
     if (1 <= n <= 2 * 10 ** 4) and (all(abs(i) <= 10 ** 9 for i in m)):
         # Сортируем массив m
+        delete_prev_values(1)
         merge_sort(m, 0, n - 1)
         # Записываем отсортированный массив в файл output.txt
-        write_file(" ".join(str(a) for a in m), "../txtf/output.txt")
+        output_path = get_output_path(1)  # Получаем путь к output.txt
+        write_file(" ".join(str(a) for a in m), output_path)
     else:
         # Выводим сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

@@ -70,3 +70,6 @@ class TestMajorityElement(unittest.TestCase):
 
         # then
         self.assertIsNone(result)
+
+if __name__ == '__main__':
+    unittest.main()

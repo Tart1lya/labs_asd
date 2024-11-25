@@ -1,7 +1,7 @@
 # Импортируем библиотеки для отслеживания времени работы программы и использования памяти
 import tracemalloc
 import time
-from lab3.utils import open_file, write_file
+from lab3.utils import *
 
 # Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
@@ -9,7 +9,9 @@ t_start = time.perf_counter()
 # Включаем отслеживание памяти, чтобы отслеживать, сколько памяти использует программа
 tracemalloc.start()
 
-
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
+input_path = os.path.join(txtf_dir, "input.txt")
 # Функция для вычисления индекса H (h-index) на основе списка цитирований
 def h_index(citations):
     # Сортируем список цитирований по убыванию, чтобы проверить индекс H быстрее
@@ -28,18 +30,19 @@ def h_index(citations):
 # Основной блок программы
 if __name__ == "__main__":
     # Читаем данные из файла input.txt с помощью функции open_file
-    citations_str = open_file("../txtf/input.txt")
+    citations_str = open_file(input_path)
     citations = citations_str[0]
 
     # Проверка корректности входных данных:
     # - размер массива должен быть в пределах от 1 до 5000
     # - все элементы массива должны быть в пределах от 0 до 1000
     if (1 <= len(citations) <= 5000) and (all(0 <= i <= 1000 for i in citations)):
+        delete_prev_values(5)
         # Вычисляем индекс H для списка цитирований
         h_index_value = h_index(citations)
-
+        output_path = get_output_path(5)
         # Записываем полученное значение индекса H в файл output.txt
-        write_file(h_index_value, "../txtf/output.txt")
+        write_file(h_index_value, output_path)
     else:
         # Если данные некорректны, выводим сообщение об ошибке
         print('Введите корректные данные')

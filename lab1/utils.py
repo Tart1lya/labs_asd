@@ -1,21 +1,38 @@
-def delete_prev_values():
-    with open("../txtf/output.txt", 'w') as file:
-        pass
-delete_prev_values()
+import os
+
+def get_output_path(task_num):
+    base_dir = os.path.dirname(os.path.abspath(__file__))  # Это lab1
+    task_dir = f'task{task_num}'  # Формируем строку типа 'task1', 'task2' и т.д.
+
+    # Путь к папке txtf внутри соответствующей папки задания
+    txtf_dir = os.path.join(base_dir, task_dir, 'txtf')
 
 
-with open("../txtf/output.txt", 'w') as file:
-    pass
+    # Отладочный вывод
+    print(f"task_dir: {task_dir}")
+    print(f"txtf_dir: {txtf_dir}")
+
+    return os.path.join(txtf_dir, "output.txt")
+
+def delete_prev_values(task_num):
+    output_path = get_output_path(task_num)
+    print(f"Путь к output.txt: {output_path}")  # Отладочный вывод
+    with open(output_path, 'w') as file:
+        pass  # Очищаем файл
+
+# Очищаем output.txt при каждом запуске
+
+
 def open_file(file_name):
     with open(file_name, 'r') as file:
         lines = file.readlines()
         if len(lines) == 2:
-            n=lines[0]
+            n = lines[0]
             if lines[1][0] in "ABCDEFGHIJKLMNOPQRSTUYXWZ":
                 arr = [i for i in lines[1]]
             else:
                 arr = list(map(int, lines[1].split()))
-            return n,arr
+            return n, arr
         if len(lines) == 4:
             n1 = lines[0]
             n2 = lines[2]
@@ -34,9 +51,7 @@ def open_file(file_name):
                 arr2.append(row)
         return arr1, arr2
 
-
-
-def write_file(arr, file_name, mode = 'w'):
+def write_file(arr, file_name, mode='w'):
     with open(file_name, mode) as file:
         if isinstance(arr, str):
             file.write(arr + "\n")

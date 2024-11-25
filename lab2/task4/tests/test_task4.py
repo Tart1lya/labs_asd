@@ -59,3 +59,6 @@ class TestBinarySearch(unittest.TestCase):
 
         # then
         self.assertEqual(result, -1)
+
+if __name__ == '__main__':
+    unittest.main()

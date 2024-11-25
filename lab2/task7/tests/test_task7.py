@@ -88,3 +88,6 @@ class TestMaxSubarray(unittest.TestCase):
         # when & then
         with self.assertRaises(IndexError):
             max_subarray(arr)
+
+if __name__ == '__main__':
+    unittest.main()

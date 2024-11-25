@@ -1,13 +1,16 @@
 # Импортируем модули для отслеживания использования памяти и времени выполнения
 import tracemalloc
 import time
-from lab2.utils import open_file, write_file
+from lab2.utils import *
 
 # Запускаем таймер для отслеживания времени выполнения программы
 t_start = time.perf_counter()
 # Включаем отслеживание использования памяти
 tracemalloc.start()
-
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
+input_path = os.path.join(txtf_dir, "input.txt")
+output_path = get_output_path(7)
 # Функция max_subarray находит подмассив с максимальной суммой в массиве arr
 def max_subarray(arr):
     # Инициализируем переменные для хранения максимальной суммы и текущей суммы подмассива
@@ -40,7 +43,7 @@ def max_subarray(arr):
 # Основной блок программы
 if __name__ == "__main__":
     # Считываем данные из файла input.txt с помощью функции open_file
-    n_list, arr = open_file("../txtf/input.txt")
+    n_list, arr = open_file(input_path)
 
     # Извлекаем количество элементов в массиве
     n = int(n_list[0])
@@ -48,11 +51,11 @@ if __name__ == "__main__":
     # Проверяем корректность входных данных
     if 1 <= n <= 2 * 10**4 and (all(abs(i) <= 10**9 for i in arr)):
         # Очищаем файл output.txt перед записью результата
-        write_file("", "../txtf/output.txt", mode="w")
+        delete_prev_values(7)
         # Находим подмассив с максимальной суммой
         sub_arr = max_subarray(arr)
         # Записываем результат в файл output.txt
-        write_file(sub_arr, "../txtf/output.txt")
+        write_file(sub_arr, output_path)
     else:
         # Выводим сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

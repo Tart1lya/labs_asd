@@ -2,7 +2,7 @@
 import tracemalloc
 import time
 import random
-from lab2.utils import open_file, write_file
+from lab2.utils import *
 
 # Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
@@ -10,7 +10,9 @@ t_start = time.perf_counter()
 # Включаем отслеживание памяти
 tracemalloc.start()
 
-
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
+input_path = os.path.join(txtf_dir, "input.txt")
 def randomized_partition(arr, low, high):
     # Случайный выбор опорного элемента для разделения массива
     pivot_index = random.randint(low, high)
@@ -69,15 +71,17 @@ def randomized_quick_sort_3way(arr, low, high):
 # Основной блок программы
 if __name__ == "__main__":
     # Читаем данные из файла input.txt с помощью функции open_file
-    n_str, m = open_file("../txtf/input.txt")
+    n_str, m = open_file(input_path)
     n = int(n_str[0])  # Преобразуем первую строку в число n
 
     # Проверка корректности входных данных: размер массива и элементы
     if (1 <= n <= 10 ** 4) and (all(abs(i) <= 10 ** 9 for i in m)):
+        delete_prev_values(1)
         # Сортируем массив m с помощью функции randomized_quick_sort_3way
         randomized_quick_sort_3way(m, 0, n - 1)
+        output_path = get_output_path(1)
         # Записываем отсортированный массив в файл output.txt
-        write_file(" ".join(str(a) for a in m), "../txtf/output.txt")
+        write_file(" ".join(str(a) for a in m), output_path)
     else:
         # Выводим сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

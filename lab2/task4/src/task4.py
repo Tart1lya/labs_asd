@@ -1,7 +1,7 @@
 # Импортируем библиотеки для отслеживания использования памяти и времени выполнения программы
 import tracemalloc
 import time
-from lab2.utils import open_file, write_file
+from lab2.utils import *
 
 # Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
@@ -9,6 +9,10 @@ t_start = time.perf_counter()
 # Включаем отслеживание памяти
 tracemalloc.start()
 
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
+input_path = os.path.join(txtf_dir, "input.txt")
+output_path = get_output_path(4)
 # Функция binary_search выполняет двоичный поиск элемента target в отсортированном массиве arr
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1  # Инициализация левого и правого указателей
@@ -25,7 +29,7 @@ def binary_search(arr, target):
 # Основной блок программы
 if __name__ == "__main__":
     # Читаем данные из файла input.txt с помощью функции open_file
-    data_n, data_k = open_file("../txtf/input.txt")
+    data_n, data_k = open_file(input_path)
 
     # Извлекаем количество элементов n и массив a из первого блока данных
     n = int(data_n[0])
@@ -39,12 +43,12 @@ if __name__ == "__main__":
     if 1 <= n <= 10**5 and 1 <= k <= 10**5 and min(a) >= 1 and \
         min(b) >= 1 and max(a) <= 10**9 and max(b) <= 10**9:
         # Очищаем файл output.txt перед записью результатов
-        write_file("", "../txtf/output.txt", mode="w")
+        delete_prev_values(4)
         # Выполняем двоичный поиск для каждого элемента массива b в массиве a
         for i in b:
             result = binary_search(a, i)  # Ищем элемент i из b в a
             # Записываем результат поиска в output.txt
-            write_file(f"{result} ", "../txtf/output.txt", mode='a')
+            write_file(f"{result} ", output_path, mode='a')
     else:
         # Сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')
