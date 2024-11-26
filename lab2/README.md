@@ -26,11 +26,11 @@
    ```
 3. **Запуску всех задач**
    ```bash
-    for script in */src/*.py; do PYTHONPATH=$(pwd) python "$script"; done
+    for script in lab*/src/*.py; do PYTHONPATH=$(pwd) python "$script"; done
    ```
 
 ## Тестирование
 Для запуска тестов выполните:
 ```bash
-    for script in */tests/*.py; do PYTHONPATH=$(pwd) python "$script"; done
+    for script in lab*/tests/*.py; do PYTHONPATH=$(pwd) python "$script"; done
 ```
