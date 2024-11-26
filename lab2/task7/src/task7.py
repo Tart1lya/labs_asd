@@ -50,12 +50,14 @@ if __name__ == "__main__":
 
     # Проверяем корректность входных данных
     if 1 <= n <= 2 * 10**4 and (all(abs(i) <= 10**9 for i in arr)):
+        print(f"\nTask 7\nInput:\n{n}\n{arr}")
         # Очищаем файл output.txt перед записью результата
         delete_prev_values(7)
         # Находим подмассив с максимальной суммой
         sub_arr = max_subarray(arr)
         # Записываем результат в файл output.txt
         write_file(sub_arr, output_path)
+        print_output_file(7)
     else:
         # Выводим сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

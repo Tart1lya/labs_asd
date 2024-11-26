@@ -22,6 +22,7 @@ if __name__ == "__main__":
 
     # Проверка корректности входных данных
     if (1 <= n <= 10**6) and (1 <= k <= m <= 10**6) and (n * m <= 5 * 10**7):
+        print(f"\nTask 7\nInput:\n{n} {m} {k}\n{columns}")
         delete_prev_values(7)
         # Формируем список строк из колонок
         strings = [(i + 1, ''.join(columns[j][i] for j in range(m))) for i in range(n)]
@@ -34,6 +35,7 @@ if __name__ == "__main__":
         result = [str(item[0]) for item in strings]
         output_path = get_output_path(7)
         write_file(result, output_path)
+        print_output_file(7)
     else:
         print('Введите корректные данные')
 

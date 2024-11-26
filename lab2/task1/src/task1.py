@@ -1,7 +1,7 @@
 # Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
-from lab2.utils import write_file, open_file, get_output_path, delete_prev_values
+from lab2.utils import *
 import os
 
 # Запускаем таймер для измерения времени работы программы
@@ -67,12 +67,14 @@ if __name__ == "__main__":
 
     # Проверка корректности входных данных
     if (1 <= n <= 2 * 10 ** 4) and (all(abs(i) <= 10 ** 9 for i in m)):
+        print(f'\nTask 1\nInput:\n{n}\n{m}')
         # Сортируем массив m
         delete_prev_values(1)
         merge_sort(m, 0, n - 1)
         # Записываем отсортированный массив в файл output.txt
         output_path = get_output_path(1)  # Получаем путь к output.txt
         write_file(" ".join(str(a) for a in m), output_path)
+        print_output_file(1)
     else:
         # Выводим сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

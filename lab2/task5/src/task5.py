@@ -58,6 +58,7 @@ if __name__ == "__main__":
 
     # Проверка корректности входных данных
     if 1 <= n <= 10**5 and (all(abs(i) <= 10**9 for i in arr)):
+        print(f"\nTask 5\nInput:\n{n}\n{arr}")
         # Очищаем файл output.txt перед записью результатов
         delete_prev_values(5)
 
@@ -66,11 +67,12 @@ if __name__ == "__main__":
         # Проверяем, встречается ли найденный элемент более чем в половине массива
         if majority_element is not None:
             if count_occurrences(arr, majority_element, 0, n) > n // 2:
-                write_file('1\n', output_path, mode="a")  # Записываем '1', если мажоритарный элемент найден
+                write_file('1', output_path, mode="a")  # Записываем '1', если мажоритарный элемент найден
             else:
-                write_file('0\n', output_path, mode="a")  # Записываем '0', если нет мажоритарного элемента
+                write_file('0', output_path, mode="a")  # Записываем '0', если нет мажоритарного элемента
         else:
-            write_file('0\n', output_path, mode="a")  # Записываем '0', если мажоритарного элемента нет
+            write_file('0', output_path, mode="a")  # Записываем '0', если мажоритарного элемента нет
+        print_output_file(5)
     else:
         # Сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

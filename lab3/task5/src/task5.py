@@ -37,12 +37,14 @@ if __name__ == "__main__":
     # - размер массива должен быть в пределах от 1 до 5000
     # - все элементы массива должны быть в пределах от 0 до 1000
     if (1 <= len(citations) <= 5000) and (all(0 <= i <= 1000 for i in citations)):
+        print(f"\nTask 5\nInput:\n{citations}")
         delete_prev_values(5)
         # Вычисляем индекс H для списка цитирований
         h_index_value = h_index(citations)
         output_path = get_output_path(5)
         # Записываем полученное значение индекса H в файл output.txt
         write_file(h_index_value, output_path)
+        print_output_file(5)
     else:
         # Если данные некорректны, выводим сообщение об ошибке
         print('Введите корректные данные')

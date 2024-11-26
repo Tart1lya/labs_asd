@@ -77,6 +77,7 @@ if __name__ == "__main__":
 
     # Проверка корректности входных данных
     if (1 <= n <= 10 ** 5) and (all(abs(i) <= 10 ** 9 for i in m)):
+        print(f"\nTask 3\nInput:\n{n}\n{m}")
         delete_prev_values(3)
         # Инициализируем временный массив для хранения отсортированных значений
         temp_arr = [0] * n
@@ -84,6 +85,7 @@ if __name__ == "__main__":
         result = merge_sort_and_count(m, temp_arr, 0, n - 1)
         # Записываем количество инверсий в файл output.txt
         write_file(result, output_path)
+        print_output_file(3)
     else:
         # Сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

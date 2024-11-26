@@ -70,11 +70,13 @@ if __name__ == "__main__":
 
     # Проверка корректности входных данных
     if (1 <= n <= 10 ** 5) and (all(abs(i) <= 10 ** 9 for i in m)):
+        print(f"\nTask 2\nInput:\n{n}\n{m}")
         # Сортируем массив m
         delete_prev_values(2)
         merge_sort(m, 0, n - 1)
         # Записываем окончательный отсортированный массив в файл output.txt
         write_file(" ".join(str(a) for a in m), output_path, mode='a')
+        print_output_file(2)
     else:
         # Сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')

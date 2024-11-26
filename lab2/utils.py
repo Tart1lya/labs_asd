@@ -13,6 +13,12 @@ def delete_prev_values(task_num):
     with open(output_path, 'w') as file:
         pass  # Очищаем файл
 
+def print_output_file(task_num):
+    output_path = get_output_path(task_num)
+    with open(output_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+        print(f"Output:\n{content}")
+
 
 def open_file(file_name):
     with (open(file_name, 'r') as file):

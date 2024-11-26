@@ -42,6 +42,7 @@ if __name__ == "__main__":
     # Проверка корректности входных данных
     if 1 <= n <= 10**5 and 1 <= k <= 10**5 and min(a) >= 1 and \
         min(b) >= 1 and max(a) <= 10**9 and max(b) <= 10**9:
+        print(f"\nTask 4\nInput:\n{data_n}\n{data_k}")
         # Очищаем файл output.txt перед записью результатов
         delete_prev_values(4)
         # Выполняем двоичный поиск для каждого элемента массива b в массиве a
@@ -49,6 +50,7 @@ if __name__ == "__main__":
             result = binary_search(a, i)  # Ищем элемент i из b в a
             # Записываем результат поиска в output.txt
             write_file(f"{result} ", output_path, mode='a')
+        print_output_file(4)
     else:
         # Сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')
