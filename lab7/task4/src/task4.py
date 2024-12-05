@@ -1,8 +1,7 @@
 # Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
-import os
-from lab2.utils import *
+from lab7.utils import *
 
 # Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
@@ -40,10 +39,10 @@ if __name__ == "__main__":
     input_data = open_file(input_path)
 
     # Преобразуем входные данные
-    n = int(input_data[0][0])  # Длина первой последовательности
-    A = list(map(int, input_data[1]))  # Первая последовательность
-    m = int(input_data[2][0])  # Длина второй последовательности
-    B = list(map(int, input_data[3]))  # Вторая последовательность
+    n = int(input_data[0].strip())  # Длина первой последовательности
+    A = list(map(int, input_data[1].strip().split()))  # Первая последовательность
+    m = int(input_data[2].strip())  # Длина второй последовательности
+    B = list(map(int, input_data[3].strip().split()))  # Вторая последовательность
 
     # Проверка корректности входных данных
     if (1 <= n <= 100) and (1 <= m <= 100) and (all(-10**9 < x < 10**9 for x in A + B)):
