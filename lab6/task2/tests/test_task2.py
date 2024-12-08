@@ -3,7 +3,6 @@ import unittest
 from lab6.task2.src.task2 import *
 class TestPhoneBookManager(unittest.TestCase):
 
-    # Тест на номер, начинающийся с нуля
     def test_should_react_when_add_number_with_leading_zero(self):
         # given
         given = [
@@ -17,7 +16,6 @@ class TestPhoneBookManager(unittest.TestCase):
         then = ["invalid"]
         self.assertEqual(when, then)
 
-    # Тест на имя длиной более 15 символов
     def test_should_react_when_add_name_too_long(self):
         # given
         given = [
@@ -31,7 +29,6 @@ class TestPhoneBookManager(unittest.TestCase):
         then = ["invalid"]
         self.assertEqual(when, then)
 
-    # Тест на добавление и поиск существующего номера
     def test_should_find_existing_number(self):
         # given
         given = [
@@ -46,7 +43,6 @@ class TestPhoneBookManager(unittest.TestCase):
         then = ["John"]
         self.assertEqual(when, then)
 
-    # Тест на поиск несуществующего номера
     def test_should_find_non_existing_number(self):
         # given
         given = [
@@ -60,7 +56,6 @@ class TestPhoneBookManager(unittest.TestCase):
         then = ["not found"]
         self.assertEqual(when, then)
 
-    # Тест на удаление существующего номера и поиск
     def test_should_delete_existing_number(self):
         # given
         given = [
@@ -76,7 +71,6 @@ class TestPhoneBookManager(unittest.TestCase):
         then = ["not found"]
         self.assertEqual(when, then)
 
-    # Тест на удаление несуществующего номера
     def test_should_delete_non_existing_number(self):
         # given
         given = [
@@ -90,7 +84,6 @@ class TestPhoneBookManager(unittest.TestCase):
         then = []
         self.assertEqual(when, then)
 
-    # Тест на несколько запросов
     def test_should_work_with_multiple_queries(self):
         # given
         given = [

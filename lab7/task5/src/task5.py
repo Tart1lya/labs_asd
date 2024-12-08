@@ -1,18 +1,14 @@
-# Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
 from lab7.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Текущая директория
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория txtf
-input_path = os.path.join(txtf_dir, "input.txt")
-
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Текущая директория
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(5)
 
 def longest_common_subsequence_3(a, b, c):
     """
@@ -35,12 +31,9 @@ def longest_common_subsequence_3(a, b, c):
     return dp[n][m][l]
 
 
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    input_data = open_file(input_path)
+    input_data = open_file(INPUT_PATH)
 
-    # Разбираем данные
     n = int(input_data[0][0])
     m = int(input_data[2][0])
     l = int(input_data[4][0])
@@ -48,7 +41,6 @@ if __name__ == "__main__":
     b = list(map(int, input_data[3].split()))
     c = list(map(int, input_data[5].split()))
 
-    # Проверяем корректность данных
     if all(1 <= val <= 100 for val in (n, m, l)) and \
             all(-10**9 < x < 10**9 for x in a + b + c):
         print(f"Task 5\nInput:\nA: {a}\nB: {b}\nC: {c}")
@@ -57,19 +49,12 @@ if __name__ == "__main__":
         # Вычисляем результат
         result = longest_common_subsequence_3(a, b, c)
 
-        # Записываем результат в файл output.txt
-        output_path = get_output_path(5)
-        write_file(str(result), output_path)
+        write_file(str(result), OUTPUT_PATH)
         print_output_file(5)
 
     else:
-        # Выводим сообщение об ошибке, если данные некорректны
         print("Введите корректные данные")
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

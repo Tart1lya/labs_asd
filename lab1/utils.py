@@ -1,26 +1,17 @@
 import os
 
 def get_output_path(task_num):
-    base_dir = os.path.dirname(os.path.abspath(__file__))  # Это lab1
-    task_dir = f'task{task_num}'  # Формируем строку типа 'task1', 'task2' и т.д.
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    task_dir = f'task{task_num}'
 
-    # Путь к папке txtf внутри соответствующей папки задания
     txtf_dir = os.path.join(base_dir, task_dir, 'txtf')
-
-
-    # Отладочный вывод
-    print(f"task_dir: {task_dir}")
-    print(f"txtf_dir: {txtf_dir}")
 
     return os.path.join(txtf_dir, "output.txt")
 
 def delete_prev_values(task_num):
     output_path = get_output_path(task_num)
-    print(f"Путь к output.txt: {output_path}")  # Отладочный вывод
     with open(output_path, 'w') as file:
-        pass  # Очищаем файл
-
-# Очищаем output.txt при каждом запуске
+        pass
 
 
 def open_file(file_name):
@@ -50,6 +41,7 @@ def open_file(file_name):
                 row = list(map(int, lines[i].strip().split()))
                 arr2.append(row)
         return arr1, arr2
+
 
 def write_file(arr, file_name, mode='w'):
     with open(file_name, mode) as file:

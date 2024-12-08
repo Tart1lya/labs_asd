@@ -1,10 +1,10 @@
 import tracemalloc
 import time
-# Запускаем таймер для измерения времени работы программы
-t_start = time.perf_counter()
 
-# Включаем отслеживание памяти
+t_start = time.perf_counter()
 tracemalloc.start()
+
+
 class Node:
     """
     Класс для узла связного списка.
@@ -14,7 +14,6 @@ class Node:
     def __init__(self, value):
         self.value = value  # Значение в узле
         self.next = None  # Ссылка на следующий узел
-
 
 class Queue:
     """
@@ -86,8 +85,8 @@ class Queue:
             raise IndexError("Очередь пуста. Нет элементов для просмотра.")
         return self.front.value
 
+
 print("\nTask 13_2")
-# Пример использования очереди
 if __name__ == "__main__":
     queue = Queue(max_size=3)  # Создаём очередь с максимальным размером 3
 
@@ -104,19 +103,13 @@ if __name__ == "__main__":
         print(f"Первый элемент в очереди после добавления: {queue.peek()}")  # Просмотр первого элемента (20)
 
         queue.enqueue(50)  # Попытка добавить 50 в переполненную очередь
-        # Выводим время работы программы
-        print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-        # Выводим количество памяти, затраченной на выполнение программы
-        print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
 
-        # Останавливаем отслеживание памяти
+        print("Время работы: %s секунд" % (time.perf_counter() - t_start))
+        print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
         tracemalloc.stop()
+
     except Exception as e:
         print(f"Ошибка: {e}")
-        # Выводим время работы программы
         print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-        # Выводим количество памяти, затраченной на выполнение программы
         print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-        # Останавливаем отслеживание памяти
         tracemalloc.stop()

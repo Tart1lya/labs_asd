@@ -1,23 +1,21 @@
-# Импортируем библиотеки для отслеживания использования памяти и времени выполнения программы
 import tracemalloc
 import time
 from lab2.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
-output_path = get_output_path(2)
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Директория task2/src
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория task2/txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(2)
+
 # Функция merge выполняет слияние двух отсортированных подмассивов в исходный массив arr
 def merge(arr, left, mid, right):
+
     # Создаем временные подмассивы из элементов исходного массива
-    L = arr[left:mid + 1]  # Левая половина
-    R = arr[mid + 1:right + 1]  # Правая половина
+    L = arr[left:mid + 1]
+    R = arr[mid + 1:right + 1]
 
     # Инициализируем индексы для подмассивов L и R, а также для arr
     i = j = 0
@@ -46,43 +44,40 @@ def merge(arr, left, mid, right):
         k += 1
 
     # Записываем текущие индексы и крайние элементы объединенного подмассива в файл
-    write_file(f"{left + 1} {right + 1} {arr[left]} {arr[right]}\n", output_path, mode='a')
+    write_file(f"{left + 1} {right + 1} {arr[left]} {arr[right]}\n", OUTPUT_PATH, mode='a')
 
 
 # Рекурсивная функция merge_sort выполняет сортировку массива методом слияния
 def merge_sort(arr, left, right):
     if left < right:
+
         # Находим середину массива
         mid = (left + right) // 2
+
         # Рекурсивно сортируем левую и правую половины массива
         merge_sort(arr, left, mid)
         merge_sort(arr, mid + 1, right)
+
         # Сливаем отсортированные половины
         merge(arr, left, mid, right)
 
 
-# Основной блок программы
+
 if __name__ == "__main__":
 
-    # Читаем данные из файла input.txt с помощью функции open_file
-    n_str, m = open_file(input_path)
-    n = int(n_str[0])  # Преобразуем первое значение из файла в число n
+    n_str, m = open_file(INPUT_PATH)
+    n = int(n_str[0])
 
-    # Проверка корректности входных данных
     if (1 <= n <= 10 ** 5) and (all(abs(i) <= 10 ** 9 for i in m)):
         print(f"\nTask 2\nInput:\n{n}\n{m}")
         # Сортируем массив m
         delete_prev_values(2)
         merge_sort(m, 0, n - 1)
-        # Записываем окончательный отсортированный массив в файл output.txt
-        write_file(" ".join(str(a) for a in m), output_path, mode='a')
+        write_file(" ".join(str(a) for a in m), OUTPUT_PATH, mode='a')
         print_output_file(2)
     else:
-        # Сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-    tracemalloc.stop()  # Останавливаем отслеживание памяти
+    tracemalloc.stop()

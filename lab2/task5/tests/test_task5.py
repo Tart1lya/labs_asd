@@ -62,7 +62,7 @@ class TestMajorityElement(unittest.TestCase):
 
     def test_should_large_array(self):
         # given
-        arr = [1] * 50000 + [2] * 50000  # 100000 элементов, поровну 1 и 2
+        arr = [1] * 50000 + [2] * 50000
         n = len(arr)
 
         # when

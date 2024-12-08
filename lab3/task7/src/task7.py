@@ -2,25 +2,23 @@ import tracemalloc
 import time
 from lab3.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория task1/txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(7)
+
+
 def radix_sort_phase(strings, phase):
     """Сортировка по заданной фазе (символу)."""
     return sorted(strings, key=lambda x: x[1][phase])
 
-# Основной блок программы
-if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    (n, m, k), columns = open_file(input_path)
 
-    # Проверка корректности входных данных
+if __name__ == "__main__":
+    (n, m, k), columns = open_file(INPUT_PATH)
+
     if (1 <= n <= 10**6) and (1 <= k <= m <= 10**6) and (n * m <= 5 * 10**7):
         print(f"\nTask 7\nInput:\n{n} {m} {k}\n{columns}")
         delete_prev_values(7)
@@ -33,14 +31,11 @@ if __name__ == "__main__":
 
         # Подготовка результатов (выводим индексы строк в новом порядке)
         result = [str(item[0]) for item in strings]
-        output_path = get_output_path(7)
-        write_file(result, output_path)
+        write_file(result, OUTPUT_PATH)
         print_output_file(7)
     else:
         print('Введите корректные данные')
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
     tracemalloc.stop()

@@ -1,5 +1,5 @@
 import unittest
-from lab7.task7.src.task7 import matches_pattern  # Предполагается, что основной код находится в файле task.py
+from lab7.task7.src.task7 import matches_pattern
 
 class TestMatchesPattern(unittest.TestCase):
 

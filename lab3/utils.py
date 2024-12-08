@@ -1,9 +1,8 @@
 import os
 def get_output_path(task_num):
-    base_dir = os.path.dirname(os.path.abspath(__file__))  # Это lab1
-    task_dir = f'task{task_num}'  # Формируем строку типа 'task1', 'task2' и т.д.
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    task_dir = f'task{task_num}'
 
-    # Путь к папке txtf внутри соответствующей папки задания
     txtf_dir = os.path.join(base_dir, task_dir, 'txtf')
 
     return os.path.join(txtf_dir, "output.txt")
@@ -11,7 +10,7 @@ def get_output_path(task_num):
 def delete_prev_values(task_num):
     output_path = get_output_path(task_num)
     with open(output_path, 'w') as file:
-        pass  # Очищаем файл
+        pass
 
 
 
@@ -19,11 +18,8 @@ def open_file(file_name):
     with (open(file_name, 'r') as file):
         lines = [line.strip() for line in file if line.strip()]
         if len(lines) == 3:
-            # Читаем размеры массивов n и m
             n, m = map(int, lines[0].split())
-            # Читаем элементы массива A
             A = list(map(int, lines[1].split()))
-            # Читаем элементы массива B
             B = list(map(int, lines[2].split()))
             return [n, m], A, B
 

@@ -36,7 +36,7 @@ class TestInversionCount(unittest.TestCase):
         inv_count = merge_sort_and_count(arr, temp_arr, 0, len(arr) - 1)
 
         # then
-        self.assertEqual(inv_count, 10)  # n(n-1)/2 для n = 5
+        self.assertEqual(inv_count, 10)
 
     def test_should_count_inversion_in_random_array(self):
         # given
@@ -47,7 +47,7 @@ class TestInversionCount(unittest.TestCase):
         inv_count = merge_sort_and_count(arr, temp_arr, 0, len(arr) - 1)
 
         # then
-        self.assertEqual(inv_count, 3)  # Инверсии: (3,2), (5,2), (5,4)
+        self.assertEqual(inv_count, 3)
 
     def test_should_count_inversion_in_large_values(self):
         # given
@@ -58,7 +58,7 @@ class TestInversionCount(unittest.TestCase):
         inv_count = merge_sort_and_count(arr, temp_arr, 0, len(arr) - 1)
 
         # then
-        self.assertEqual(inv_count, 1)  # Единственная инверсия (10^9, -10^9)
+        self.assertEqual(inv_count, 1)
 
     def test_should_count_inversion_in_single_element(self):
         # given

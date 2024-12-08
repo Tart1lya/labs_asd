@@ -1,19 +1,14 @@
-# Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
-import os
 from lab7.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-# Определяем пути к файлам
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Директория task/src
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория task/txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(7)
 
 def matches_pattern(pattern: str, string: str) -> str:
     """
@@ -48,12 +43,8 @@ def matches_pattern(pattern: str, string: str) -> str:
     # Результат в последней ячейке
     return "YES" if dp[n][m] else "NO"
 
-
-
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    lines = open_file(input_path)
+    lines = open_file(INPUT_PATH)
     pattern = lines[0] if len(lines) > 0 else ""
     string = lines[1] if len(lines) > 1 else ""
 
@@ -62,16 +53,11 @@ if __name__ == "__main__":
         print(f"\nTask 7:\nPattern: {pattern}\nString: {string}")
         delete_prev_values(7)
         result = matches_pattern(pattern, string)
-        output_path = get_output_path(7)
-        write_file(result, output_path)
+        write_file(result, OUTPUT_PATH)
         print_output_file(7)
     else:
         print('Введите корректные данные')
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

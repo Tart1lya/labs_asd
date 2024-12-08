@@ -1,17 +1,14 @@
-# Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import time
 import tracemalloc
 from lab5.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Текущая директория
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Путь к директории с файлами
-input_path = os.path.join(txtf_dir, "input.txt")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Текущая директория
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Путь к директории с файлами
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(6)
 
 
 # Основная функция обработки операций
@@ -63,32 +60,23 @@ def process_priority_queue(operations):
     return result
 
 
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    lines = open_file(input_path)
-    n = int(lines[0])  # Число операций
-    operations = lines[1:]  # Список операций
+    lines = open_file(INPUT_PATH)
+    n = int(lines[0])
+    operations = lines[1:]
 
-    # Проверка корректности входных данных
     if 1 <= n <= 10 ** 6 and all(len(op.split()) in (1, 2, 3) for op in operations):
         print(f"\nTask: 6\nInput:\n{n}\n{operations}\n")
-        delete_prev_values(6)  # Очищаем предыдущие результаты
+        delete_prev_values(6)
 
         # Обрабатываем операции
         results = process_priority_queue(operations)
 
-        output_path = get_output_path(6)
-        # Записываем результаты операций X в файл output.txt
-        write_file("\n".join(results), output_path)
+        write_file("\n".join(results), OUTPUT_PATH)
         print_output_file(6)
     else:
         print("Введите корректные данные")
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

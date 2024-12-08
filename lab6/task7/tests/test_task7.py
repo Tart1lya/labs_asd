@@ -59,7 +59,7 @@ class TestCountBeautifulPairs(unittest.TestCase):
         n = 6
         k = 2
         S = "abcabc"
-        beautiful_pairs = {('a', 'b'), ('a', 'b')}  # Duplicate pairs
+        beautiful_pairs = {('a', 'b'), ('a', 'b')}
 
         # when
         result = count_beautiful_pairs(n, k, S, beautiful_pairs)

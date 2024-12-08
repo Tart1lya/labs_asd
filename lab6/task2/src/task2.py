@@ -3,16 +3,13 @@ import time
 import os
 from lab6.utils import open_file, write_file, get_output_path, delete_prev_values, print_output_file
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-# Пути к входному и выходному файлам
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Текущая директория
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория txtf
-input_path = os.path.join(txtf_dir, "input.txt")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(2)
 
 
 def is_valid_name(name):
@@ -48,7 +45,7 @@ def process_phone_book(queries):
             if is_valid_number(number) and is_valid_name(name):
                 phone_book[number] = name
             else:
-                results.append("invalid")  # Для отладки можно использовать вывод ошибки
+                results.append("invalid")
         elif command[0] == "del":
             number = command[1]
             if is_valid_number(number):
@@ -58,40 +55,27 @@ def process_phone_book(queries):
             if is_valid_number(number):
                 results.append(phone_book.get(number, "not found"))
             else:
-                results.append("not found")  # Некорректный номер считается ненайденным
+                results.append("not found")
 
     return results
 
-
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt
-    lines = open_file(input_path)
-    n = int(lines[0].strip())  # Количество запросов
-    queries = lines[1:]  # Список запросов
+    lines = open_file(INPUT_PATH)
+    n = int(lines[0].strip())
+    queries = lines[1:]
 
-    # Проверка корректности входных данных
     if 1 <= n <= 10 ** 5:
         print(f"\nTask 2\nInput:\n{n}\n{queries}")
         delete_prev_values(2)
 
-        # Обрабатываем запросы
         results = process_phone_book(queries)
 
-        # Формируем путь к выходному файлу
-        output_path = get_output_path(2)
-
-        # Записываем результаты в файл output.txt
-        write_file("\n".join(results), output_path)
+        write_file("\n".join(results), OUTPUT_PATH)
         print_output_file(2)
 
     else:
         print("Введите корректные данные")
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

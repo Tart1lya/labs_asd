@@ -1,5 +1,5 @@
 import unittest
-from lab4.task8.src.task8 import evaluate_postfix  # Импортируем функцию из файла с решением
+from lab4.task8.src.task8 import evaluate_postfix
 
 class TestEvaluatePostfix(unittest.TestCase):
     def test_should_work_with_basic_operations(self):

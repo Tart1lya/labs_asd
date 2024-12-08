@@ -13,14 +13,14 @@ class TestQueue(unittest.TestCase):
         queue.enqueue(30)
 
         # then
-        self.assertEqual(queue.peek(), 10)  # Проверка первого элемента
+        self.assertEqual(queue.peek(), 10)
 
         # when
         dequeued_value = queue.dequeue()
 
         # then
-        self.assertEqual(dequeued_value, 10)  # Проверка удалённого элемента
-        self.assertEqual(queue.peek(), 20)  # Проверка первого элемента после удаления
+        self.assertEqual(dequeued_value, 10)
+        self.assertEqual(queue.peek(), 20)
 
     def test_enqueue_when_full(self):
         # given
@@ -32,7 +32,7 @@ class TestQueue(unittest.TestCase):
         queue.enqueue(30)
 
         # then
-        with self.assertRaises(OverflowError):  # Проверка переполнения
+        with self.assertRaises(OverflowError):
             queue.enqueue(40)
 
     def test_dequeue_when_empty(self):
@@ -40,7 +40,7 @@ class TestQueue(unittest.TestCase):
         queue = Queue(max_size=3)
 
         # when
-        with self.assertRaises(IndexError):  # Проверка на удаление из пустой очереди
+        with self.assertRaises(IndexError):
             queue.dequeue()
 
     def test_peek_when_empty(self):
@@ -48,7 +48,7 @@ class TestQueue(unittest.TestCase):
         queue = Queue(max_size=3)
 
         # when
-        with self.assertRaises(IndexError):  # Проверка на просмотр пустой очереди
+        with self.assertRaises(IndexError):
             queue.peek()
 
     def test_is_empty(self):
@@ -59,13 +59,13 @@ class TestQueue(unittest.TestCase):
         queue.enqueue(10)
 
         # then
-        self.assertFalse(queue.is_empty())  # Проверка, что очередь не пуста после добавления элемента
+        self.assertFalse(queue.is_empty())
 
         # when
         queue.dequeue()
 
         # then
-        self.assertTrue(queue.is_empty())  # Проверка, что очередь пуста после удаления элемента
+        self.assertTrue(queue.is_empty())
 
     def test_is_full(self):
         # given
@@ -77,13 +77,13 @@ class TestQueue(unittest.TestCase):
         queue.enqueue(30)
 
         # then
-        self.assertTrue(queue.is_full())  # Проверка, что очередь полна
+        self.assertTrue(queue.is_full())
 
         # when
         queue.dequeue()
 
         # then
-        self.assertFalse(queue.is_full())  # Проверка, что очередь не полна после удаления элемента
+        self.assertFalse(queue.is_full())
 
 
 if __name__ == '__main__':

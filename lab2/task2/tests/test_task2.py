@@ -61,7 +61,7 @@ class TestMergeSortPlus(unittest.TestCase):
 
     def test_should_sort_large_array(self):
         # given
-        arr = list(range(2 * 10**4, 0, -1))  # Тест с большим массивом
+        arr = list(range(2 * 10**4, 0, -1))
         expected = sorted(arr)
 
         # when

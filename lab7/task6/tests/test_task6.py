@@ -1,6 +1,6 @@
 import unittest
 
-from lab7.task6.src.task6 import find_lis  # Замените на актуальный путь к вашей функции
+from lab7.task6.src.task6 import find_lis
 
 
 class TestFindLIS(unittest.TestCase):

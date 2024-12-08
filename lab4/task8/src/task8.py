@@ -1,21 +1,17 @@
-# Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
 from lab4.utils import *
 
-# Запускаем таймер для измерения времени работы программы
-t_start = time.perf_counter()
 
-# Включаем отслеживание памяти
+t_start = time.perf_counter()
 tracemalloc.start()
 
-# Устанавливаем пути для файлов
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(8)
 
 
-# Функция для вычисления значения выражения в постфиксной записи
 def evaluate_postfix(expression):
     """
     Вычисляет значение выражения в постфиксной записи.
@@ -36,8 +32,6 @@ def evaluate_postfix(expression):
             # Если токен - оператор, выполняем соответствующую операцию
             b = stack.pop()  # Второй операнд
             a = stack.pop()  # Первый операнд
-
-            # Гарантируем, что промежуточные результаты также находятся в пределах |2^31|
             if token == '+':
                 result = a + b
             elif token == '-':
@@ -55,14 +49,11 @@ def evaluate_postfix(expression):
     return stack.pop()
 
 
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    lines = open_file(input_path)
-    n = int(lines[0].strip())  # Количество элементов в выражении
-    expr = lines[1].strip().split()  # Постфиксное выражение как список строк
+    lines = open_file(INPUT_PATH)
+    n = int(lines[0].strip())
+    expr = lines[1].strip().split()
 
-    # Проверка корректности входных данных
     if 1 <= n <= 10 ** 6 and len(expr) == n:
         print(f"\nTask 8\nInput:\n{n}\n{' '.join(expr)}")
         delete_prev_values(8)
@@ -75,18 +66,11 @@ if __name__ == "__main__":
             result = None
 
         if result is not None:
-            # Записываем результат в файл output.txt
-            output_path = get_output_path(8)
-            write_file(str(result), output_path)
+            write_file(str(result), OUTPUT_PATH)
             print_output_file(8)
     else:
-        # Выводим сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

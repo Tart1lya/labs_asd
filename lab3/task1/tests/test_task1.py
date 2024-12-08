@@ -54,7 +54,7 @@ class TestQuickSortEnhancements(unittest.TestCase):
 
     def test_should_make_randomized_quick_sort_3way_ordered(self):
         # given
-        arr = list(range(10 ** 3, 0, -1))  # массив от 1000 до 1
+        arr = list(range(10 ** 3, 0, -1))
         expected = sorted(arr)
 
         # when
@@ -65,7 +65,7 @@ class TestQuickSortEnhancements(unittest.TestCase):
 
     def test_should_make_randomized_quick_sort_3way_already_sorted(self):
         # given
-        arr = list(range(1, 1001))  # уже отсортированный массив
+        arr = list(range(1, 1001))
         expected = sorted(arr)
 
         # when

@@ -1,18 +1,17 @@
-# Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
 import random
 from lab2.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория task1/txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(1)
+
+
 def randomized_partition(arr, low, high):
     # Случайный выбор опорного элемента для разделения массива
     pivot_index = random.randint(low, high)
@@ -20,6 +19,7 @@ def randomized_partition(arr, low, high):
 
     pivot = arr[high]
     i = low - 1
+
     # Разбиение массива на элементы, меньшие и большие опорного
     for j in range(low, high):
         if arr[j] <= pivot:
@@ -68,30 +68,21 @@ def randomized_quick_sort_3way(arr, low, high):
         randomized_quick_sort_3way(arr, gt + 1, high)
 
 
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    n_str, m = open_file(input_path)
-    n = int(n_str[0])  # Преобразуем первую строку в число n
+    n_str, m = open_file(INPUT_PATH)
+    n = int(n_str[0])
 
-    # Проверка корректности входных данных: размер массива и элементы
+
     if (1 <= n <= 10 ** 4) and (all(abs(i) <= 10 ** 9 for i in m)):
         print(f"\nTask 1\nInput:\n{n}\n{m}")
         delete_prev_values(1)
         # Сортируем массив m с помощью функции randomized_quick_sort_3way
         randomized_quick_sort_3way(m, 0, n - 1)
-        output_path = get_output_path(1)
-        # Записываем отсортированный массив в файл output.txt
-        write_file(" ".join(str(a) for a in m), output_path)
+        write_file(" ".join(str(a) for a in m), OUTPUT_PATH)
         print_output_file(1)
     else:
-        # Выводим сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

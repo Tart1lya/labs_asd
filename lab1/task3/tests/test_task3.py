@@ -13,7 +13,7 @@ class TestDescendingSort(unittest.TestCase):
         descending_sort(n, m)
 
         # then
-        self.assertEqual(m, [5, 4, 3, 2, 1])  # Список уже отсортирован по убыванию
+        self.assertEqual(m, [5, 4, 3, 2, 1])
 
     def test_should_sort_reverse_sorted_list(self):
         # given
@@ -24,7 +24,7 @@ class TestDescendingSort(unittest.TestCase):
         descending_sort(n, m)
 
         # then
-        self.assertEqual(m, [5, 4, 3, 2, 1])  # Проверяем сортировку
+        self.assertEqual(m, [5, 4, 3, 2, 1])
 
     def test_should_sort_unsorted_list(self):
         # given
@@ -35,7 +35,7 @@ class TestDescendingSort(unittest.TestCase):
         descending_sort(n, m)
 
         # then
-        self.assertEqual(m, [59, 58, 41, 41, 31, 26])  # Проверяем на произвольном списке
+        self.assertEqual(m, [59, 58, 41, 41, 31, 26])
 
     def test_should_sort_single_element_list(self):
         # given
@@ -46,7 +46,7 @@ class TestDescendingSort(unittest.TestCase):
         descending_sort(n, m)
 
         # then
-        self.assertEqual(m, [42])  # Список с одним элементом
+        self.assertEqual(m, [42])
 
     def test_should_sort_empty_list(self):
         # given
@@ -57,7 +57,7 @@ class TestDescendingSort(unittest.TestCase):
         descending_sort(n, m)
 
         # then
-        self.assertEqual(m, [])  # Пустой список
+        self.assertEqual(m, [])
 
     def test_should_sort_large_numbers(self):
         # given
@@ -68,7 +68,7 @@ class TestDescendingSort(unittest.TestCase):
         descending_sort(n, m)
 
         # then
-        self.assertEqual(m, [10**9, 0, -10**9])  # Сортировка с большими числами
+        self.assertEqual(m, [10**9, 0, -10**9])
 
 
 if __name__ == '__main__':

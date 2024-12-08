@@ -1,18 +1,14 @@
-# Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
 from lab7.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
-
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Директория task/src
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория task/txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(4)
 
 def longest_common_subsequence(n, A, m, B):
     """
@@ -33,18 +29,14 @@ def longest_common_subsequence(n, A, m, B):
     return dp[n][m]
 
 
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    input_data = open_file(input_path)
+    input_data = open_file(INPUT_PATH)
 
-    # Преобразуем входные данные
-    n = int(input_data[0].strip())  # Длина первой последовательности
-    A = list(map(int, input_data[1].strip().split()))  # Первая последовательность
-    m = int(input_data[2].strip())  # Длина второй последовательности
-    B = list(map(int, input_data[3].strip().split()))  # Вторая последовательность
+    n = int(input_data[0].strip())
+    A = list(map(int, input_data[1].strip().split()))
+    m = int(input_data[2].strip())
+    B = list(map(int, input_data[3].strip().split()))
 
-    # Проверка корректности входных данных
     if (1 <= n <= 100) and (1 <= m <= 100) and (all(-10**9 < x < 10**9 for x in A + B)):
         print(f"Task 4\nInput:\n{n} {A}\n{m} {B}")
         delete_prev_values(4)
@@ -52,18 +44,11 @@ if __name__ == "__main__":
         # Вычисляем длину самой длинной общей подпоследовательности
         result = longest_common_subsequence(n, A, m, B)
 
-        output_path = get_output_path(4)
-        # Записываем результат в файл output.txt
-        write_file(str(result), output_path)
+        write_file(str(result), OUTPUT_PATH)
         print_output_file(4)
     else:
-        # Выводим сообщение об ошибке, если данные некорректны
         print("Введите корректные данные")
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

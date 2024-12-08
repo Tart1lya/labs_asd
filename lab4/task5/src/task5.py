@@ -2,15 +2,13 @@ import tracemalloc
 import time
 from lab4.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория task1/txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(5)
 
 
 class MaxStack:
@@ -34,17 +32,14 @@ class MaxStack:
         return self.max_stack[-1] if self.max_stack else None
 
 
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt с помощью функции open_file
-    lines = open_file(input_path)
-    n = int(lines[0].strip())  # Количество команд
-    commands = [line.strip() for line in lines[1:]]  # Список команд
+    lines = open_file(INPUT_PATH)
+    n = int(lines[0].strip())
+    commands = [line.strip() for line in lines[1:]]
 
     max_stack = MaxStack()
     output = []
 
-    # Проверка корректности входных данных
     if 1 <= n <= 400000 and all(
         command.startswith("push") and 0 <= int(command.split()[1]) <= 100000 if command.startswith("push") else True for command in commands):
         print(f"\nTask 5\nInput:\n{n}\n{commands}")
@@ -60,17 +55,11 @@ if __name__ == "__main__":
             elif command == "max":
                 output.append(str(max_stack.max()))
 
-        # Записываем результаты в файл output.txt
-        output_path = get_output_path(5)
-        write_file("\n".join(output), output_path)
+        write_file("\n".join(output), OUTPUT_PATH)
         print_output_file(5)
     else:
         print('Введите корректные данные')
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

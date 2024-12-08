@@ -1,19 +1,15 @@
-# Импортируем библиотеки для отслеживания памяти и времени выполнения программы
 import tracemalloc
 import time
 from lab4.utils import *
 
-# Запускаем таймер для измерения времени работы программы
 t_start = time.perf_counter()
-
-# Включаем отслеживание памяти
 tracemalloc.start()
 
-# Пути к входному и выходному файлам
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
-output_path = os.path.join(txtf_dir, "output.txt")
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = os.path.join(TXTF_DIR, "output.txt")
 
 
 def process_stack(commands):
@@ -35,15 +31,11 @@ def process_stack(commands):
     return results
 
 
-# Основной блок программы
 if __name__ == "__main__":
-    # Читаем данные из файла input.txt
-    lines = open_file(input_path)
+    lines = open_file(INPUT_PATH)
 
-    # Удаляем символы новой строки у каждой команды
-    commands = [cmd.strip() for cmd in lines[1:]]  # Убираем \n
+    commands = [cmd.strip() for cmd in lines[1:]]
 
-    # Проверка корректности входных данных
     if 1 <= len(commands) <= 10 ** 6 and all(
             (cmd.startswith("+") and len(cmd.split()) == 2 and abs(int(cmd.split()[1])) <= 10 ** 9) or cmd == "-" for
             cmd in commands
@@ -51,18 +43,12 @@ if __name__ == "__main__":
         print(f"\nTask 1\nInput:\n{len(commands)}\n{commands}")
         delete_prev_values(1)
 
-        # Обрабатываем команды и записываем результат
         results = process_stack(commands)
-        write_file("\n".join(map(str, results)), output_path)
+        write_file("\n".join(map(str, results)), OUTPUT_PATH)
         print_output_file(1)
     else:
-        # Выводим сообщение об ошибке, если данные некорректны
         print("Введите корректные данные")
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество памяти, затраченной на выполнение программы
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

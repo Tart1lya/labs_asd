@@ -1,24 +1,24 @@
-# Импортируем библиотеки для измерения памяти и времени работы программы
 import tracemalloc
 import time
 from lab2.utils import *
 
-# Запускаем таймер для отслеживания времени выполнения программы
 t_start = time.perf_counter()
-# Включаем отслеживание использования памяти
 tracemalloc.start()
 
-current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория task1/src
-txtf_dir = os.path.join(os.path.dirname(current_dir), "txtf")  # Директория task1/txtf
-input_path = os.path.join(txtf_dir, "input.txt")
-output_path = get_output_path(5)
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))  # Директория task5/src
+TXTF_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "txtf")  # Директория task5/txtf
+INPUT_PATH = os.path.join(TXTF_DIR, "input.txt")
+OUTPUT_PATH = get_output_path(5)
+
+
 # Функция count_occurrences подсчитывает количество вхождений числа num в подмассиве arr[left:right]
 def count_occurrences(arr, num, left, right):
-    count = 0  # Инициализируем счетчик
+    count = 0
     for i in range(left, right):
         if arr[i] == num:
-            count += 1  # Увеличиваем счетчик при совпадении
+            count += 1
     return count
+
 
 # Рекурсивная функция majority_element_rec для поиска элемента, встречающегося более половины раз в массиве arr
 def majority_element_rec(arr, left, right):
@@ -48,18 +48,16 @@ def majority_element_rec(arr, left, right):
     else:
         return None
 
-# Основной блок программы
+
 if __name__ == "__main__":
     # Считываем данные из файла input.txt с помощью функции open_file
-    n_list, arr = open_file(input_path)
+    n_list, arr = open_file(INPUT_PATH)
 
     # Извлекаем количество элементов в массиве
     n = int(n_list[0])
 
-    # Проверка корректности входных данных
     if 1 <= n <= 10**5 and (all(abs(i) <= 10**9 for i in arr)):
         print(f"\nTask 5\nInput:\n{n}\n{arr}")
-        # Очищаем файл output.txt перед записью результатов
         delete_prev_values(5)
 
         # Запускаем рекурсивную функцию для поиска мажоритарного элемента
@@ -67,19 +65,15 @@ if __name__ == "__main__":
         # Проверяем, встречается ли найденный элемент более чем в половине массива
         if majority_element is not None:
             if count_occurrences(arr, majority_element, 0, n) > n // 2:
-                write_file('1', output_path, mode="a")  # Записываем '1', если мажоритарный элемент найден
+                write_file('1', OUTPUT_PATH, mode="a")  # Записываем '1', если мажоритарный элемент найден
             else:
-                write_file('0', output_path, mode="a")  # Записываем '0', если нет мажоритарного элемента
+                write_file('0', OUTPUT_PATH, mode="a")  # Записываем '0', если нет мажоритарного элемента
         else:
-            write_file('0', output_path, mode="a")  # Записываем '0', если мажоритарного элемента нет
+            write_file('0', OUTPUT_PATH, mode="a")  # Записываем '0', если мажоритарного элемента нет
         print_output_file(5)
     else:
-        # Сообщение об ошибке, если данные некорректны
         print('Введите корректные данные')
 
-    # Выводим время работы программы
     print("Время работы: %s секунд" % (time.perf_counter() - t_start))
-    # Выводим количество затраченной памяти
     print("Затрачено памяти:", tracemalloc.get_traced_memory()[1], "байт")
-    # Останавливаем отслеживание памяти
     tracemalloc.stop()

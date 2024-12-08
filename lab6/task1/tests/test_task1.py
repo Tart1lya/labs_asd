@@ -1,5 +1,5 @@
 import unittest
-from lab6.task1.src.task1 import process_operations  # Импортируем функцию из файла solution.py
+from lab6.task1.src.task1 import process_operations
 
 class TestSetOperations(unittest.TestCase):
 
